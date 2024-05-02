@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
+	import Logo from '$lib/assets/logo.png';
 
 	let textContainer;
 
@@ -16,29 +17,18 @@
 					return `<span style="
 								transform:rotate(${angle + i * 4}deg);
 								position: absolute;
-								left: 50%;
 								transform-origin: 0 200px;
+								left: 50%;
 								" class="char">${char}</span>`;
 				})
 				.join('');
 		}
-
-		// textContainer.innerHTML = textContainer.innerText
-		// 	.split('')
-		// 	.map((char, i) => {
-		// 		// console.log(char);
-		// 		return `<span style="
-		// 		transform:rotate(${i * 4}deg);
-		// 		position: absolute;
-		// 		left: 50%;
-		// 		transform-origin: 0 200px;
-		// 		" class="char">${char}</span>`;
-		// 	})
-		// 	.join('');
-
-		// text.innerText = 'foo';
 	});
 </script>
+
+<header class="title-section">
+	<img src={Logo} alt="" />
+</header>
 
 <div bind:this={textContainer} id="main-circle">
 	<span class="text">Rory Wilson</span>
@@ -46,6 +36,16 @@
 </div>
 
 <style>
+	.title-section {
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+
+	.title-section > img {
+		max-width: 100px;
+	}
+
 	#main-circle {
 		position: relative;
 		width: 400px;
