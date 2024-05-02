@@ -1,10 +1,9 @@
 <script>
 </script>
 
-<span>linked</span>
-<slot />
-
-<div class="page-content"></div>
+<div class="page-content">
+	<slot />
+</div>
 
 <style>
 	.page-content {

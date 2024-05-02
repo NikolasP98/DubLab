@@ -1,8 +1,17 @@
 <script>
+	import Logo from '$lib/assets/logo.png';
 </script>
 
 <nav>
-	<a href="/app">goto app</a>
+	<ul>
+		<li>
+			<!-- <img src={Logo} alt="" /> -->
+			<a href="/">Into Infinity</a>
+		</li>
+		<li>
+			<a href="/app">goto app</a>
+		</li>
+	</ul>
 </nav>
 
 <div class="page-content">
@@ -12,6 +21,29 @@
 <style>
 	:global(body) {
 		font-family: monospace;
+	}
+
+	nav {
+		border-bottom: black 1px solid;
+	}
+
+	nav img {
+		max-width: 100px;
+	}
+
+	nav > ul {
+		list-style-type: none;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	nav a {
+		/* background-color: red; */
+	}
+
+	ul > li {
 	}
 
 	.page-content {
