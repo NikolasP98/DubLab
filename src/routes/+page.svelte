@@ -3,7 +3,7 @@
 	import { writable } from 'svelte/store';
 	import { spring, tweened } from 'svelte/motion';
 	import Splash from '$lib/components/Splashscreen.svelte';
-	import Circles from '$lib/components/CircleContainer.svelte';
+	import Circles from '$lib/components/circles/CircleContainer.svelte';
 
 	import Logo from '$lib/assets/logo.png';
 

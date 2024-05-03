@@ -25,6 +25,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"gsap": "^3.12.5",
 		"interactjs": "^1.10.27"
 	},
 	"resolutions": {

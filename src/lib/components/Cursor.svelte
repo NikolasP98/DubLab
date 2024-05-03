@@ -145,9 +145,9 @@ pointer-events-none
 left-0 top-0
 z-[99999999999]
 rounded-full bg-[black] -translate-x-1/2 -translate-y-1/2"
-	style:width={`${$cursorSize}px`}
-	style:height={`${$cursorSize}px`}
-	style={`left: ${$mainCursorPosition.x}px; top:${$mainCursorPosition.y}px;`}
+	style:width="{$cursorSize}px"
+	style:height="{$cursorSize}px"
+	style="left:{$mainCursorPosition.x}px; top:{$mainCursorPosition.y}px;"
 ></div>
 
 <!-- Action Cursor -->
