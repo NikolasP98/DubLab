@@ -3,37 +3,18 @@
 	let { isLoaded } = $props();
 </script>
 
-<div class="splashscreen" class:active={!$isLoaded}>
-	<img src={Logo} alt="" />
-	<h3>Loading...</h3>
+<div
+	class="{$isLoaded
+		? 'opacity-0 pointer-events-none'
+		: 'opacity-100'} delay-700 duration-500 bg-slate-200 transition-opacity fixed top-0 left-0 size-full flex flex-col gap-10 justify-center items-center z-50"
+	class:active={!$isLoaded}
+>
+	<img class="max-w-48" src={Logo} alt="" />
+	<div class="flex flex-col gap-1 items-center">
+		<h1 class=" text-2xl">Into Infinity</h1>
+		<h3>Loading...</h3>
+	</div>
 </div>
 
 <style>
-	.splashscreen {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: #8c8c8c; /* Or your desired background color */
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		z-index: 1000; /* Ensure it's on top */
-		transition: opacity 2s ease;
-	}
-
-	img {
-		max-width: 200px;
-	}
-
-	.splashscreen.active {
-		opacity: 1;
-	}
-
-	.splashscreen:not(.active) {
-		opacity: 0;
-		pointer-events: none; /* Disable interaction */
-	}
 </style>

@@ -6,7 +6,6 @@
 	let textContainer;
 	let miniCircleContainer;
 	let miniCircles = $state([]);
-	let dataLoaded = $state(false);
 
 	onMount(async () => {
 		const spans = textContainer.querySelectorAll('span');
@@ -21,7 +20,7 @@
 					return `<span style="
 				transform:rotate(${angle + i * 4}deg);
 				position: absolute;
-				transform-origin: 0 200px;
+				transform-origin: 0 192px;
 				left: 50%;
 				">${char}</span>`;
 				})
@@ -53,54 +52,24 @@
 	};
 </script>
 
-<div bind:this={textContainer} id="main-circle">
+<div bind:this={textContainer} id="main-circle" class="relative size-96 bg-red-600 rounded-full">
 	<span class="text">Rory Wilson</span>
 	<span class="text">Evisbeats</span>
 </div>
-<div bind:this={miniCircleContainer} class="circle-collection bg-green-500">
+<div
+	bind:this={miniCircleContainer}
+	class="-z-10 absolute top-0 left-0 min-w-full min-h-full bg-green-500"
+>
 	{#if $isLoaded}
 		{#each miniCircles.products as entry}
-			<div class="mini-circle">{entry.price}</div>
+			<div class="absolute flex justify-center items-center bg-slate-600 w-24 h-24 rounded-full">
+				{entry.price}
+			</div>
 		{/each}
 	{/if}
 </div>
 
 <style>
-	.circle-collection {
-		z-index: -1;
-		position: absolute;
-		top: 0;
-		left: 0;
-		min-width: 100vw;
-		min-height: 100vh;
-	}
-
-	.mini-circle {
-		position: absolute;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
-		background-color: gray;
-		width: 100px;
-		height: 100px;
-		padding: 20px;
-		border-radius: 100%;
-	}
-
-	#main-circle {
-		position: relative;
-		width: 400px;
-		height: 400px;
-		background-color: red;
-		border-radius: 100%;
-
-		/* display: flex;
-
-		justify-content: center;
-		align-items: center; */
-	}
-
 	.text {
 		width: 100%;
 		height: 100%;

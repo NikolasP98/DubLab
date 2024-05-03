@@ -12,20 +12,11 @@
 
 <Splash {isLoaded} />
 
-<header class="title-section">
-	<img src={Logo} alt="" />
+<header class="flex items-center mb-5">
+	<img class="max-w-24" src={Logo} alt="" />
 </header>
 
 <Circles {isLoaded} />
 
 <style>
-	.title-section {
-		display: flex;
-		align-items: center;
-		margin-bottom: 20px;
-	}
-
-	.title-section > img {
-		max-width: 100px;
-	}
 </style>
