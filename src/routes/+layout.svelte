@@ -1,5 +1,7 @@
 <script>
+	import '../app.css';
 	import Logo from '$lib/assets/logo.png';
+	import Cursor from '$lib/components/Cursor.svelte';
 </script>
 
 <nav>
@@ -17,6 +19,8 @@
 <div class="page-content">
 	<slot />
 </div>
+
+<Cursor />
 
 <style>
 	:global(body) {
@@ -55,7 +59,5 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-
-		/* background-color: green; */
 	}
 </style>

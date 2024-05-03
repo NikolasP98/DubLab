@@ -1,5 +1,11 @@
 <script>
 	import Player from '$lib/assets/audioplayer.png';
+
+	const getEntries = async () => {
+		const entries = await (await fetch('https://dummyjson.com/products?select=title,price')).json();
+		console.log(entries);
+		return entries;
+	};
 </script>
 
 <div class="page-content">
@@ -17,23 +23,15 @@
 	</div>
 
 	<div class="content-section">
-		<button>Lorem.</button><button>Soluta?</button><button>Consequuntur?</button><button
-			>Consectetur!</button
-		><button>Quisquam.</button><button>Reiciendis.</button><button>Id!</button><button>Quos?</button
-		><button>Ipsam.</button><button>Exercitationem!</button><button>Quam.</button><button
-			>Qui.</button
-		><button>Maiores?</button><button>Obcaecati.</button><button>Adipisci.</button><button
-			>Fuga?</button
-		><button>Dolore?</button><button>Ad!</button><button>Dicta.</button><button>Laborum.</button
-		><button>Fuga?</button><button>Consequuntur.</button><button>Quidem.</button><button
-			>Quidem.</button
-		><button>Voluptatem.</button><button>Numquam!</button><button>Magnam.</button><button
-			>Autem.</button
-		><button>Deserunt.</button><button>At!</button><button>Impedit.</button><button
-			>Distinctio.</button
-		><button>Obcaecati!</button><button>Molestias?</button><button>Voluptas.</button><button
-			>Illum!</button
-		><button>Nesciunt.</button><button>Quo.</button><button>Vitae?</button><button>At.</button>
+		{#await getEntries()}
+			<pre>loading...</pre>
+		{:then entries}
+			{#each entries.products as entry}
+				<button>{entry.title}</button>
+			{/each}
+		{:catch error}
+			<p>bad call</p>
+		{/await}
 	</div>
 </div>
 
@@ -87,6 +85,15 @@
 		margin-bottom: 10px;
 		display: flex;
 		justify-content: space-between;
+		overflow-x: scroll;
+
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+
+	/* Hide scrollbar for Chrome, Safari and Opera */
+	.options-bar .options::-webkit-scrollbar {
+		display: none;
 	}
 
 	.content-section {
@@ -102,10 +109,15 @@
 	}
 
 	.player {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		background-color: black;
 	}
 
 	.player img {
 		width: 100%;
+		/* height: 100%; */
 		cursor: pointer;
 	}
 </style>
