@@ -7,7 +7,7 @@
 
 <style>
 	.page-content {
-		background-color: black;
+		background-color: #121212;
 		min-height: 100vh;
 		width: 100%;
 		border-radius: 5px;

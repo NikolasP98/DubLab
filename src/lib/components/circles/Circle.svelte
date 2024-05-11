@@ -5,8 +5,10 @@
 	let { data, primary = false } = $props();
 	let textContainer;
 
-	const rotation = tweened(0, {
-		duration: 400
+	const rotation = spring(0, {
+		// duration: 400
+		damping: 0.5,
+		stiffness: 0.3
 	});
 
 	$effect(async () => {
@@ -76,17 +78,21 @@
 	};
 
 	const rotateText = (e) => {
-		rotation.update((n) => n + 0.6);
+		rotation.update((n) => n + 180);
 	};
 
+	let isRotating = false;
+
 	const hoverHandler = (e) => {
-		if (textContainer) {
+		if (textContainer && !isRotating) {
+			isRotating = true;
 			rotateText();
 		}
 	};
 
 	const hoverLeave = (e) => {
-		if (textContainer) {
+		if (textContainer && isRotating) {
+			isRotating = false;
 			rotation.set(0);
 		}
 	};
