@@ -79,6 +79,7 @@
 
 		if (e.type === 'touchmove') {
 			// if touch, then use touch API
+			return;
 			event = e.touches[0];
 		} else if (e.type === 'mousedown' || e.type === 'mousemove') {
 			// e.preventDefault();

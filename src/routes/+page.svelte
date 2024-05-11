@@ -1,7 +1,5 @@
 <script>
-	import { onMount } from 'svelte';
 	import { writable } from 'svelte/store';
-	import { spring, tweened } from 'svelte/motion';
 	import Splash from '$lib/components/Splashscreen.svelte';
 	import Circles from '$lib/components/circles/CircleContainer.svelte';
 
@@ -10,13 +8,15 @@
 	let isLoaded = writable(false);
 </script>
 
-<Splash {isLoaded} />
+<div id="trendy" class="min-h-screen size-full flex flex-col items-center justify-center">
+	<Splash {isLoaded} />
 
-<header class="flex items-center mb-5">
-	<img class="max-w-24" src={Logo} alt="" />
-</header>
+	<header class="flex items-center mb-5">
+		<img class="max-w-24" src={Logo} alt="" />
+	</header>
 
-<Circles {isLoaded} />
+	<Circles {isLoaded} />
+</div>
 
 <style>
 </style>

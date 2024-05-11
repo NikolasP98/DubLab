@@ -4,60 +4,24 @@
 	import Cursor from '$lib/components/Cursor.svelte';
 </script>
 
-<nav>
-	<ul>
+<nav class="border-b-2 border-solid border-black fixed top-0 w-full z-10">
+	<ul class="list-none flex items-center justify-between">
 		<li>
 			<!-- <img src={Logo} alt="" /> -->
 			<a href="/">Into Infinity</a>
 		</li>
 		<li>
-			<a href="/app">goto app</a>
+			<a href="/app">goto app --></a>
 		</li>
 	</ul>
 </nav>
 
-<div class="page-content">
-	<slot />
-</div>
+<slot />
 
 <Cursor />
 
 <style>
 	:global(body) {
 		font-family: monospace;
-	}
-
-	nav {
-		border-bottom: black 1px solid;
-	}
-
-	nav img {
-		max-width: 100px;
-	}
-
-	nav > ul {
-		list-style-type: none;
-
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-
-	nav a {
-		/* background-color: red; */
-	}
-
-	ul > li {
-	}
-
-	.page-content {
-		width: 100%;
-		min-height: 90vh;
-		height: 100%;
-
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
 	}
 </style>
