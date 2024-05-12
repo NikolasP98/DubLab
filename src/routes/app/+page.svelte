@@ -1,6 +1,6 @@
 <script>
-	import Card from './Card.svelte';
-	import Player from './Player.svelte';
+	import Card from '$lib/components/app/Card.svelte';
+	import Player from '$lib/components/app/Player.svelte';
 
 	const edmArtists = [
 		{ artist: 'SynthwaveSiren', genre: 'Synthwave', groups: ['Electric Guitars', 'Synthesizers'] },
@@ -52,22 +52,23 @@
 			allGroups.add(group);
 		}
 	}
-	console.log(allGroups);
 
-	const getEntries = async () => {
-		const entries = await (await fetch('https://dummyjson.com/products?select=title,price')).json();
-		return entries;
-	};
+	// const getEntries = async () => {
+	// 	const entries = await (await fetch('https://dummyjson.com/products?select=title,price')).json();
+	// 	return entries;
+	// };
 </script>
 
-<div class="text-white p-5">
-	<div class="flex flex-col gap-4 mb-12 bg-black border-b-2 border-solid border-[#90ee8f]">
+<div class="text-white">
+	<div
+		class="flex flex-col gap-4 px-4 pt-6 mb-12 bg-black border-b-2 border-solid border-[#90ee8f]"
+	>
 		<div class="flex flex-col">
 			<span class="text-4xl">INTO INFINITY</span>
 			<span class="second-title">AUDIO MEGA MIXER</span>
 		</div>
 
-		<div class="flex justify-between mb-2 overflow-x-scroll gap-4 pl-4 no-scrollbar">
+		<div class="flex justify-start mb-2 overflow-x-scroll gap-4 pl-4 no-scrollbar">
 			{#each allGroups as group}
 				<button
 					class="	text-white bg-transparent min-w-min text-nowrap rounded-full
@@ -78,15 +79,10 @@
 		</div>
 	</div>
 
-	<div class="flex flex-wrap justify-evenly gap-6">
+	<div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-7 gap-6 p-4 md:p-6">
 		{#each edmArtists as entry}
 			<Card {entry} />
 		{/each}
-		{#await getEntries()}
-			<pre>loading...</pre>
-		{:catch error}
-			<p>bad call</p>
-		{/await}
 	</div>
 </div>
 

@@ -83,7 +83,6 @@
 			event = e.touches[0];
 		} else if (e.type === 'mousedown' || e.type === 'mousemove') {
 			// e.preventDefault();
-			// console.log(e);
 		}
 
 		// handleInteraction(event);
@@ -93,7 +92,6 @@
 		cursorPosition.y = event.clientY;
 
 		mainCursorPosition.set(cursorPosition);
-		// console.log($mainCursorPosition);
 
 		actionCursorPosition.set(cursorPosition);
 	};

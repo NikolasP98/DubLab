@@ -26,7 +26,8 @@
 	"type": "module",
 	"dependencies": {
 		"gsap": "^3.12.5",
-		"interactjs": "^1.10.27"
+		"interactjs": "^1.10.27",
+		"tone": "^14.9.17"
 	},
 	"resolutions": {
 		"string-width": "^4.2.3"

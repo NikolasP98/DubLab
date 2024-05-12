@@ -5,6 +5,8 @@
 
 	import Logo from '$lib/assets/logo.png';
 
+	let { data } = $props();
+
 	let isLoaded = writable(false);
 </script>
 
@@ -15,7 +17,7 @@
 		<img class="max-w-24" src={Logo} alt="" />
 	</header>
 
-	<Circles {isLoaded} />
+	<Circles {data} {isLoaded} />
 </div>
 
 <style>

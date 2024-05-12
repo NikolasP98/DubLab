@@ -1,8 +1,11 @@
 <script>
+	let { children } = $props();
 </script>
 
 <div class="page-content">
-	<slot />
+	{#if children}
+		{@render children()}
+	{/if}
 </div>
 
 <style>

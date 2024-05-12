@@ -2,23 +2,9 @@
 	import { circleData } from './stores';
 	import Circle from '$lib/components/circles/Circle.svelte';
 
-	let { isLoaded } = $props();
+	let { isLoaded, data } = $props();
 
 	let miniCircleContainer;
-
-	$effect(async () => {
-		const miniCircles = await getEntries();
-
-		circleData.set(
-			miniCircles.products.map((entry, i) => ({
-				id: i,
-				entry,
-				position: calculatePositions(miniCircles.products.length)[i],
-				titles: ['Rory Wilson', 'Evisbeats']
-			}))
-		);
-		isLoaded.set(true);
-	});
 
 	const calculatePositions = (numCircles) => {
 		// Example: Place circles in a larger circle
@@ -35,10 +21,25 @@
 		return positions;
 	};
 
-	const getEntries = async () => {
-		const entries = await (await fetch('https://dummyjson.com/products?select=title,price')).json();
-		return entries;
-	};
+	let mainCircle;
+
+	$effect(() => {
+		const miniCircles = data.entries.map((entry, i) => ({
+			id: i,
+			entry,
+			position: calculatePositions(data.entries.length)[i],
+			titles: ['Rory Wilson', 'Evisbeats']
+		}));
+
+		mainCircle = miniCircles.shift();
+
+		circleData.set({
+			mainCircle,
+			circles: miniCircles
+		});
+		isLoaded.set(true);
+		console.log();
+	});
 
 	const overlapsOtherCircles = (targetCircle, x, y, circles) => {
 		for (const otherCircle of circles) {
@@ -54,10 +55,6 @@
 		}
 		return false;
 	};
-
-	const log = (i) => {
-		console.log(i);
-	};
 </script>
 
 {#if $isLoaded}
@@ -66,12 +63,15 @@
 		class="relative size-full flex items-center justify-center bg-green-100"
 		role="group"
 	>
-		{#each $circleData as data, i}
-			{#if i == 0}
-				<Circle primary {data} />
+		{#if $circleData}
+			<Circle primary data={$circleData.mainCircle} />
+
+			{#if $circleData.circles}
+				{#each $circleData.circles as data, i}
+					<Circle {data} />
+				{/each}
 			{/if}
-			<Circle {data} />
-		{/each}
+		{/if}
 	</div>
 {:else}
 	<pre>loading...</pre>

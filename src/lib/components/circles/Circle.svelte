@@ -20,7 +20,6 @@
 					rotate: `${value}deg`
 				};
 				Object.assign(textContainer.style, containerStyles);
-				console.log(textContainer.style.rotate);
 			});
 		}
 	});
