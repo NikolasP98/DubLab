@@ -1,5 +1,12 @@
 <script>
 	let { entry } = $props();
+	/*
+	Connect to audio store, 
+	once we have access to the store, 
+	adjust UI based on store values
+*/
+
+	let active = $state(false);
 </script>
 
 <div class="card-container flex flex-col items-center justify-center gap-1">

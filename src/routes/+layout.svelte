@@ -4,7 +4,7 @@
 
 	import Cursor from '$lib/components/Cursor.svelte';
 
-	let { children, data } = $props();
+	let { children } = $props();
 	let counter = $state(0);
 
 	// setInterval(() => {
@@ -31,7 +31,6 @@
 		</li>
 	</ul>
 </nav>
-<div class="min-h-4"></div>
 
 {#if children}
 	{@render children()}

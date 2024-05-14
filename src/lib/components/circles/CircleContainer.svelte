@@ -38,7 +38,6 @@
 			circles: miniCircles
 		});
 		isLoaded.set(true);
-		console.log();
 	});
 
 	const overlapsOtherCircles = (targetCircle, x, y, circles) => {
