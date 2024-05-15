@@ -1,17 +1,21 @@
 import { writable, derived } from 'svelte/store';
 
 type Track = {
+	// track data
 	id: number;
-	artist: string;
-	genre: string;
+	title: string;
+	artists: string[];
+	duration: number;
+	bpm: number;
+	genres: string[];
 	groups: string[];
+
+	// file data
+	path: string;
+	type: string;
 };
 
 type AudioData = {
-	isPlaying: boolean;
-	currentTime: number;
-	duration: number;
-	currentTrack?: Track;
 	tracklist: Track[];
 	inputTypes: string[];
 };
@@ -20,16 +24,12 @@ type AudioPlayer = {
 	isPlaying: boolean;
 	currentTime: number;
 	loopDuration: number;
-	currentTracks?: Track[];
+	currentTracks: Track[];
 };
 
 const initialData: AudioData = {
-	isPlaying: false,
-	currentTime: 0,
-	duration: 0,
-	currentTrack: {},
-	inputTypes: [],
-	tracklist: []
+	tracklist: [],
+	inputTypes: []
 };
 
 const playerData: AudioPlayer = {
@@ -39,7 +39,7 @@ const playerData: AudioPlayer = {
 	currentTracks: []
 };
 
-const trackLibrary = (data) => {
+const trackLibrary = (data: AudioData) => {
 	const { subscribe, set, update } = writable<AudioData>(data, (e) => {
 		console.log('subscribed data');
 	});
@@ -54,7 +54,7 @@ const trackLibrary = (data) => {
 	};
 };
 
-const audioPlayer = (data) => {
+const audioPlayer = (data: AudioPlayer) => {
 	const { subscribe, set, update } = writable<AudioPlayer>(data, (e) => {
 		console.log('subscribed player');
 	});

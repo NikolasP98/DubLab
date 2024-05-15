@@ -1,0 +1,1258 @@
+[
+	{
+		"id": "d71baeed-2164-4f1a-bdbd-ee98f4e5580d",
+		"title": "Sleek Steel Table",
+		"artists": ["Miranda Feest", "Andres Hermann", "Charlotte Hoeger"],
+		"genres": ["Rap", "New Age", "Gregorian Chant", "R&B"],
+		"groups": ["Samples", "Bass", "Percussion"],
+		"duration": 32,
+		"bpm": 108,
+		"path": "/boot/defaults/buckinghamshire_process.mesh.scd",
+		"type": "sample"
+	},
+	{
+		"id": "f337dc61-6329-4cdb-b1fc-d21b08b72432",
+		"title": "Refined Rubber Gloves",
+		"artists": ["Saul Ruecker", "Dawn Zieme", "Lydia Prosacco", "Leah Rosenbaum"],
+		"genres": ["Post-Punk", "Indie", "EDM"],
+		"groups": ["Bass", "Horns", "Drums"],
+		"duration": 60,
+		"bpm": 108,
+		"path": "/usr/local/src/creek_steel.psb.cap",
+		"type": "misc"
+	},
+	{
+		"id": "1e6f49af-61f7-4da1-a7ea-66f9d96c4d88",
+		"title": "Refined Metal Chicken",
+		"artists": ["Jon Murray", "Bradley Hammes", "Dixie Shields", "Ed Mills", "Marshall Schuppe"],
+		"genres": ["Lo-fi", "Christian"],
+		"groups": ["Field Recordings", "Synthesizers", "Field Recordings"],
+		"duration": 48,
+		"bpm": 82,
+		"path": "/lib/white_innovative_director.zir.wmx",
+		"type": "loop"
+	},
+	{
+		"id": "b5cd0b00-43ca-4803-9ad6-4b41ab693b59",
+		"title": "Incredible Metal Shoes",
+		"artists": [
+			"Lauren Daniel",
+			"Martha Conn",
+			"Myra Koepp",
+			"Gayle Rogahn",
+			"Virginia Heathcote",
+			"Forrest Russel"
+		],
+		"genres": ["Disco"],
+		"groups": ["Synthesizers", "Piano", "Bass"],
+		"duration": 40,
+		"bpm": 92,
+		"path": "/sbin/bi_directional_compress_function_based.xdp.html",
+		"type": "loop"
+	},
+	{
+		"id": "737a0974-3a41-481c-8b81-e977a3747429",
+		"title": "Practical Wooden Fish",
+		"artists": [
+			"Anne Ratke",
+			"Bernadette Hudson",
+			"Gwendolyn Terry",
+			"Gene Gutkowski",
+			"Angel Towne"
+		],
+		"genres": ["Grunge", "Shoegaze", "Punk", "Gospel", "Progressive Rock"],
+		"groups": ["Vocals", "Samples", "Piano"],
+		"duration": 64,
+		"bpm": 140,
+		"path": "/lost+found/benchmark_central_lime.skm.fh",
+		"type": "sample"
+	},
+	{
+		"id": "68decb4c-2aa7-4748-87eb-e31da9149f8e",
+		"title": "Gorgeous Wooden Computer",
+		"artists": ["Clifford Hilpert"],
+		"genres": ["Hip Hop"],
+		"groups": ["Drums"],
+		"duration": 44,
+		"bpm": 94,
+		"path": "/usr/src/index_incremental.dot.ivu",
+		"type": "loop"
+	},
+	{
+		"id": "57a8264c-7451-4aa5-b339-e7d8c727102d",
+		"title": "Rustic Rubber Cheese",
+		"artists": ["Otis Collier", "Jon Braun", "Jane Rodriguez", "Gladys Medhurst"],
+		"genres": ["Shoegaze", "Rap", "Post-Punk", "Salsa", "Motown"],
+		"groups": ["Synthesizers", "Vocals"],
+		"duration": 24,
+		"bpm": 74,
+		"path": "/home/synergies_granite.metalink.gml",
+		"type": "misc"
+	},
+	{
+		"id": "3de78102-acb9-48a7-a42d-5ca6c20300d4",
+		"title": "Handcrafted Cotton Shoes",
+		"artists": ["Lela Feeney", "Paul Will", "Fannie Mayer", "Ora Wunsch", "Gustavo Prosacco"],
+		"genres": ["Lo-fi"],
+		"groups": ["Electric Guitars", "Drums", "Bass"],
+		"duration": 20,
+		"bpm": 80,
+		"path": "/usr/lib/middleware_lead_multi_byte.yin.jardiff",
+		"type": "misc"
+	},
+	{
+		"id": "4f7ba338-2a72-48ad-bf16-8e31db2a9f9c",
+		"title": "Refined Steel Gloves",
+		"artists": ["Amos Kohler", "Glenn Dickinson", "Rolando Beatty"],
+		"genres": ["Emo", "Electro", "Alternative Rock", "Rap"],
+		"groups": ["Drums", "Samples"],
+		"duration": 12,
+		"bpm": 160,
+		"path": "/lost+found/plastic.ram.mgp",
+		"type": "misc"
+	},
+	{
+		"id": "aa3a2026-7b6b-49c3-8b0e-2b61728627d1",
+		"title": "Unbranded Concrete Chair",
+		"artists": ["Elsa Price", "Alvin Bayer", "Meghan Conn"],
+		"genres": ["Celtic", "Indie", "Dream Pop"],
+		"groups": ["Synthesizers", "Vocals", "Samples"],
+		"duration": 64,
+		"bpm": 140,
+		"path": "/Library/dollar_deposit_uic_franc.log.ser",
+		"type": "loop"
+	},
+	{
+		"id": "784a99f3-9d1b-4e06-be7a-5ea5e2822b33",
+		"title": "Licensed Soft Towels",
+		"artists": [
+			"Kathryn Streich",
+			"Irving Powlowski",
+			"Santiago Williamson",
+			"Vicki Bednar",
+			"Paulette Adams"
+		],
+		"genres": ["Downtempo", "Country", "Salsa"],
+		"groups": ["Bass", "Bass"],
+		"duration": 20,
+		"bpm": 154,
+		"path": "/usr/src/deposit_glen_incentivize.c.mqy",
+		"type": "sample"
+	},
+	{
+		"id": "c61a25e3-bef9-41f4-94d4-29df6f021347",
+		"title": "Incredible Concrete Salad",
+		"artists": ["May Von", "Lee Considine"],
+		"genres": ["Blues", "Indie", "Opera", "Punk", "Psychedelic"],
+		"groups": ["Vocals", "Horns"],
+		"duration": 44,
+		"bpm": 154,
+		"path": "/Network/courts.fe_launch.cba",
+		"type": "loop"
+	},
+	{
+		"id": "fdc0925c-2477-4d0b-8a78-ef43173766de",
+		"title": "Sleek Concrete Ball",
+		"artists": [
+			"Travis Christiansen",
+			"Lucille Kuhic",
+			"Alicia Skiles",
+			"Rufus Langworth",
+			"Christy Ondricka",
+			"Wilbur Olson"
+		],
+		"genres": ["Indie", "Disco", "Grunge", "Celtic", "Garage Rock"],
+		"groups": ["Bass", "Electric Guitars", "Piano"],
+		"duration": 44,
+		"bpm": 80,
+		"path": "/home/user/dir/tasty.uvz.msl",
+		"type": "loop"
+	},
+	{
+		"id": "789da7c1-03b5-4f0e-a54d-184a03de8df9",
+		"title": "Ergonomic Rubber Computer",
+		"artists": [
+			"Linda Konopelski",
+			"Mack Nikolaus",
+			"Rodolfo Nolan",
+			"Loren Bergnaum",
+			"Carla Wilkinson"
+		],
+		"genres": ["Punk", "Opera", "K-Pop", "Rock"],
+		"groups": ["Synthesizers"],
+		"duration": 64,
+		"bpm": 110,
+		"path": "/boot/handcrafted_payment_investor.mp4v.jsonld",
+		"type": "loop"
+	},
+	{
+		"id": "09a711a6-2e9d-47dc-a99e-4c033f0a5fc9",
+		"title": "Tasty Rubber Tuna",
+		"artists": ["Amy Mueller"],
+		"genres": ["House", "Classical", "Baroque", "Chicano", "Electronic"],
+		"groups": ["Synthesizers", "Synthesizers"],
+		"duration": 8,
+		"bpm": 128,
+		"path": "/selinux/berkshire_group.texi.cbr",
+		"type": "sample"
+	},
+	{
+		"id": "cd2901dd-2fc4-4645-82a7-c28dcf57ccc0",
+		"title": "Rustic Cotton Ball",
+		"artists": [
+			"Ollie Miller",
+			"Lydia Trantow",
+			"Cheryl Wilkinson",
+			"Pearl Herman",
+			"Blake Jacobson"
+		],
+		"genres": ["Downtempo", "Psychedelic", "Chamber Music", "Gregorian Chant", "Christian"],
+		"groups": ["Percussion", "Vocals"],
+		"duration": 32,
+		"bpm": 104,
+		"path": "/etc/periodic/deliver.sisx.opf",
+		"type": "misc"
+	},
+	{
+		"id": "7c03ed98-8b49-43c7-b845-921275c3d964",
+		"title": "Rustic Granite Pizza",
+		"artists": ["Beatrice DuBuque", "Melba Lindgren"],
+		"genres": ["Celtic", "Blues"],
+		"groups": ["Vocals"],
+		"duration": 64,
+		"bpm": 92,
+		"path": "/proc/kenyan_systems.ntf.dgc",
+		"type": "sample"
+	},
+	{
+		"id": "0176b496-6a41-4447-ba50-e2b28f2a33d9",
+		"title": "Ergonomic Granite Cheese",
+		"artists": ["Diana Bernier", "Lucy Shanahan", "Pat Weber", "Marlene Schuppe", "Jake Towne"],
+		"genres": ["Industrial", "Cumbia", "Shoegaze", "Hip Hop"],
+		"groups": ["Electric Guitars", "Horns"],
+		"duration": 16,
+		"bpm": 148,
+		"path": "/boot/defaults/account_strategist_cross_platform.jsx.rcprofile",
+		"type": "sample"
+	},
+	{
+		"id": "44d21a31-97c2-4e87-8f13-4c880ac345f8",
+		"title": "Handcrafted Concrete Gloves",
+		"artists": [
+			"Malcolm Zboncak",
+			"Dexter Rutherford",
+			"Karla Bashirian",
+			"Jeffrey Price",
+			"Irene Glover"
+		],
+		"genres": ["Electro", "Funk", "Ska", "Jazz", "Post-Punk"],
+		"groups": ["Piano", "Horns"],
+		"duration": 24,
+		"bpm": 74,
+		"path": "/lost+found/dedicated_gold.dwg.tsd",
+		"type": "misc"
+	},
+	{
+		"id": "79caf311-6fc0-4ea1-ad1b-6c8ec060b8be",
+		"title": "Unbranded Rubber Gloves",
+		"artists": ["Lawrence Strosin", "Rita Bartoletti"],
+		"genres": ["Trap", "R&B", "Opera"],
+		"groups": ["Percussion"],
+		"duration": 56,
+		"bpm": 80,
+		"path": "/dev/intelligent_soft_calculating.potx.gxt",
+		"type": "loop"
+	},
+	{
+		"id": "413ba4a7-10f5-420a-bc5c-0f4a972e1a09",
+		"title": "Generic Soft Chicken",
+		"artists": ["Arnold Heidenreich", "Jamie Cole", "Wade Gulgowski", "Erik Wuckert"],
+		"genres": ["Opera", "Dance", "Bluegrass"],
+		"groups": ["Vocals"],
+		"duration": 64,
+		"bpm": 168,
+		"path": "/proc/refined_complexity_officer.ics.vsf",
+		"type": "sample"
+	},
+	{
+		"id": "c138a084-ce9f-4dc4-b8ef-427fa0d36b7b",
+		"title": "Rustic Steel Mouse",
+		"artists": ["Melvin Hammes", "Lucille Powlowski", "Eunice Crooks"],
+		"genres": ["Jazz", "Blues"],
+		"groups": ["Percussion", "Bass", "Percussion"],
+		"duration": 36,
+		"bpm": 76,
+		"path": "/home/avenue.dvi.wsdl",
+		"type": "misc"
+	},
+	{
+		"id": "da72c1c6-ac32-409c-a89a-714323550da9",
+		"title": "Unbranded Granite Bike",
+		"artists": ["Marshall Yost", "Ben Langworth", "Casey Wunsch"],
+		"genres": ["Classical", "Folk", "Disco", "Motown", "Shoegaze"],
+		"groups": ["Vocals", "Horns"],
+		"duration": 32,
+		"bpm": 92,
+		"path": "/Applications/payment_software_planner.ppt.uvh",
+		"type": "loop"
+	},
+	{
+		"id": "0277be0b-fa36-4148-a8b3-a2eaba73743c",
+		"title": "Licensed Fresh Gloves",
+		"artists": ["Willie Wehner", "Virginia Batz"],
+		"genres": ["Industrial", "Reggae", "Folk", "Trap", "Folk"],
+		"groups": ["Vocals"],
+		"duration": 52,
+		"bpm": 154,
+		"path": "/usr/include/discrete.mobi.roff",
+		"type": "sample"
+	},
+	{
+		"id": "931518b3-0a71-4d03-b3ac-138ff9f27aca",
+		"title": "Practical Wooden Chicken",
+		"artists": [
+			"Maggie Klocko",
+			"Dexter Murazik",
+			"Kerry Stark",
+			"Salvatore Huel",
+			"Betty Strosin"
+		],
+		"genres": ["Dance", "Electronic"],
+		"groups": ["Samples"],
+		"duration": 64,
+		"bpm": 116,
+		"path": "/etc/namedb/architecture.ice.sisx",
+		"type": "sample"
+	},
+	{
+		"id": "65790462-8dc6-42fc-ac67-ce8138a8a564",
+		"title": "Ergonomic Cotton Chicken",
+		"artists": ["Iris Wiza", "Vivian Parker", "Marilyn Toy", "Caleb Murphy", "Candace Fritsch"],
+		"genres": ["EDM", "Electronic", "Trap"],
+		"groups": ["Piano"],
+		"duration": 8,
+		"bpm": 162,
+		"path": "/lost+found/fresh_withdrawal_payment.unityweb.mmd",
+		"type": "misc"
+	},
+	{
+		"id": "c8860026-d313-4630-b1a2-4d3243842522",
+		"title": "Rustic Cotton Pants",
+		"artists": ["Martha Tromp"],
+		"genres": ["New Age"],
+		"groups": ["Synthesizers", "Horns"],
+		"duration": 24,
+		"bpm": 168,
+		"path": "/etc/periodic/kuna_table.wmls.ics",
+		"type": "loop"
+	},
+	{
+		"id": "7fc88cc2-8f76-437a-b92c-fdfed991d4e7",
+		"title": "Rustic Metal Salad",
+		"artists": ["Suzanne Spencer", "Leroy White"],
+		"genres": ["Psychedelic", "Industrial", "Experimental", "Soul", "Jazz"],
+		"groups": ["Synthesizers", "Bass"],
+		"duration": 60,
+		"bpm": 80,
+		"path": "/home/user/dir/customizable_platforms.jpm.qbo",
+		"type": "misc"
+	},
+	{
+		"id": "1369851a-4af5-4fde-ab58-d90205e2601e",
+		"title": "Ergonomic Cotton Car",
+		"artists": ["Clinton Powlowski", "Spencer Keebler", "Crystal Jacobs"],
+		"genres": ["Classical", "Punk", "Rock", "Alternative Rock"],
+		"groups": ["Piano", "Samples"],
+		"duration": 64,
+		"bpm": 114,
+		"path": "/etc/namedb/bypass.so.odf",
+		"type": "loop"
+	},
+	{
+		"id": "3ac04444-7470-4bd2-b1fc-ebf4bc3082a8",
+		"title": "Handmade Plastic Bike",
+		"artists": ["Ana Johnston"],
+		"genres": ["Reggae", "Dream Pop"],
+		"groups": ["Percussion"],
+		"duration": 28,
+		"bpm": 156,
+		"path": "/usr/local/src/washington.grxml.lostxml",
+		"type": "loop"
+	},
+	{
+		"id": "8883c225-b289-46f0-b312-ba85d42e181b",
+		"title": "Handcrafted Soft Towels",
+		"artists": ["Nick Shields"],
+		"genres": ["Gregorian Chant", "Opera", "Reggae", "Gospel", "Progressive Rock"],
+		"groups": ["Vocals"],
+		"duration": 48,
+		"bpm": 102,
+		"path": "/private/var/metical_togo_steel.obd.pbm",
+		"type": "loop"
+	},
+	{
+		"id": "8268e17f-1f60-48a6-9d98-1382f4dc38da",
+		"title": "Ergonomic Soft Keyboard",
+		"artists": ["Diana Gaylord", "Anita Beatty", "Laverne Gorczany"],
+		"genres": ["Electro", "Synth-Pop", "Christian"],
+		"groups": ["Piano", "Bass", "Bass"],
+		"duration": 36,
+		"bpm": 130,
+		"path": "/selinux/payment_checking.hvp.wmx",
+		"type": "sample"
+	},
+	{
+		"id": "755c7834-ff16-4ca3-a52b-3e1b1ccc5138",
+		"title": "Tasty Soft Chicken",
+		"artists": ["Amelia Romaguera", "Dolores Schmidt", "Lucia Schinner"],
+		"genres": ["Psychedelic"],
+		"groups": ["Percussion"],
+		"duration": 56,
+		"bpm": 104,
+		"path": "/etc/periodic/toys_rubber.asf.cbz",
+		"type": "misc"
+	},
+	{
+		"id": "64b3e43b-96d1-4a77-a0f2-0a60048b43bf",
+		"title": "Refined Fresh Ball",
+		"artists": ["Devin Kuhic", "Wilma Hagenes"],
+		"genres": ["Electro", "Techno", "Ska", "Dance"],
+		"groups": ["Horns"],
+		"duration": 20,
+		"bpm": 140,
+		"path": "/private/var/planner_incredible.plb.sig",
+		"type": "sample"
+	},
+	{
+		"id": "ccfde5d3-5dd7-4b5e-a19d-56ce6c50ba30",
+		"title": "Unbranded Granite Keyboard",
+		"artists": [
+			"Ben Abernathy",
+			"Viola Gaylord",
+			"Henry Wisoky",
+			"Ernest Halvorson",
+			"Judy Emmerich"
+		],
+		"genres": ["New Age", "Soul", "Funk", "Soul", "Cumbia"],
+		"groups": ["Electric Guitars"],
+		"duration": 64,
+		"bpm": 82,
+		"path": "/home/vortals.wgt.z5",
+		"type": "loop"
+	},
+	{
+		"id": "3093c835-ab06-48a1-b34f-c907f732a7da",
+		"title": "Generic Wooden Chair",
+		"artists": ["Luis Bechtelar", "Rufus Fay", "Everett Mraz"],
+		"genres": ["Punk", "Chicano", "Neo Soul", "Ska"],
+		"groups": ["Bass", "Electric Guitars"],
+		"duration": 64,
+		"bpm": 104,
+		"path": "/private/tmp/deposit_market.hjson.mp21",
+		"type": "loop"
+	},
+	{
+		"id": "d4c6883b-75f7-459a-9bcb-b97b4ecab142",
+		"title": "Practical Plastic Bike",
+		"artists": ["Carolyn Gibson", "Ora Conn", "Archie Schumm", "Warren Stroman", "Anne Bartell"],
+		"genres": ["Folk"],
+		"groups": ["Horns"],
+		"duration": 52,
+		"bpm": 94,
+		"path": "/private/var/sausages_payment_digital.sfs.mrc",
+		"type": "loop"
+	},
+	{
+		"id": "538c24e4-8e9f-4568-a971-857f96db0fdf",
+		"title": "Small Soft Chips",
+		"artists": [
+			"Dana Douglas",
+			"Lillie Champlin",
+			"Jessie Konopelski",
+			"Eddie Romaguera",
+			"Melissa Williamson"
+		],
+		"genres": ["Progressive Rock", "Jazz", "Alternative Rock"],
+		"groups": ["Drums"],
+		"duration": 20,
+		"bpm": 138,
+		"path": "/usr/internal.udeb.sxi",
+		"type": "loop"
+	},
+	{
+		"id": "5b3970fe-59a2-49bc-aef9-59706799d51c",
+		"title": "Generic Steel Chicken",
+		"artists": ["Santiago Connelly", "Boyd Connelly", "Amelia Pacocha"],
+		"genres": ["Reggaeton", "Electronic", "Jazz"],
+		"groups": ["Electric Guitars", "Vocals"],
+		"duration": 44,
+		"bpm": 78,
+		"path": "/var/yp/rufiyaa.tra.mag",
+		"type": "misc"
+	},
+	{
+		"id": "b95e4695-4ce0-4898-851b-b1a7afe1b378",
+		"title": "Gorgeous Wooden Gloves",
+		"artists": ["Erica D'Amore"],
+		"genres": ["Dream Pop", "Trap", "Soul"],
+		"groups": ["Electric Guitars"],
+		"duration": 40,
+		"bpm": 144,
+		"path": "/usr/local/src/wooden_tasty.potm.vsd",
+		"type": "loop"
+	},
+	{
+		"id": "856a2ff0-9b8a-4e35-be25-04958db3100b",
+		"title": "Sleek Soft Sausages",
+		"artists": [
+			"Richard Grady",
+			"Tyrone McDermott",
+			"Ernestine Hickle",
+			"Wallace Schmeler",
+			"Tom Goyette"
+		],
+		"genres": ["Synth-Pop", "Gregorian Chant", "Country"],
+		"groups": ["Horns", "Electric Guitars"],
+		"duration": 44,
+		"bpm": 76,
+		"path": "/bin/garden.lrf.msi",
+		"type": "loop"
+	},
+	{
+		"id": "9cc1c699-17ff-4185-81ba-521d453c08e0",
+		"title": "Incredible Wooden Ball",
+		"artists": [
+			"Marjorie Schmidt",
+			"Virginia Huels",
+			"Merle Ullrich",
+			"Blanche Mayert",
+			"Stanley Daniel",
+			"Chelsea Lemke"
+		],
+		"genres": ["Salsa", "New Age", "R&B", "Psychedelic", "Baroque"],
+		"groups": ["Piano", "Bass", "Horns"],
+		"duration": 16,
+		"bpm": 86,
+		"path": "/var/mail/mission_critical_json.cml.uvvf",
+		"type": "sample"
+	},
+	{
+		"id": "d7402bb0-010b-410a-ad16-770c0b80bdec",
+		"title": "Fantastic Metal Shoes",
+		"artists": ["Johnny Wolf"],
+		"genres": ["Industrial", "Salsa", "Post-Punk"],
+		"groups": ["Horns", "Samples", "Horns"],
+		"duration": 24,
+		"bpm": 160,
+		"path": "/System/belarus_methodology_cross_media.dotx.stl",
+		"type": "loop"
+	},
+	{
+		"id": "53bf926b-dee4-4619-bd99-5985e6041abf",
+		"title": "Licensed Fresh Computer",
+		"artists": [
+			"Tomas Pacocha",
+			"Grant Gerhold",
+			"Marianne Boyle",
+			"Faye Stroman",
+			"Pamela Swaniawski",
+			"Elvira Daniel"
+		],
+		"genres": ["Grunge", "Rap", "Ambient", "Celtic"],
+		"groups": ["Vocals", "Bass", "Percussion"],
+		"duration": 56,
+		"bpm": 118,
+		"path": "/sbin/pants_pci.sxd.ngdat",
+		"type": "loop"
+	},
+	{
+		"id": "001f8fb8-e56c-446b-a052-50a8669dd4d6",
+		"title": "Rustic Fresh Mouse",
+		"artists": ["Jared Terry", "Stella Lockman", "Leslie Ernser"],
+		"genres": ["Latin", "Opera", "Techno", "Jazz"],
+		"groups": ["Electric Guitars"],
+		"duration": 28,
+		"bpm": 70,
+		"path": "/lib/corners_wooden_pennsylvania.smzip.cif",
+		"type": "misc"
+	},
+	{
+		"id": "be5ee4d2-c63e-45d0-8324-d1cf99cd54f5",
+		"title": "Handmade Rubber Pants",
+		"artists": ["Georgia Schamberger", "Pat Gislason", "Owen Lockman", "Jordan Schumm"],
+		"genres": ["Salsa"],
+		"groups": ["Vocals", "Drums"],
+		"duration": 8,
+		"bpm": 72,
+		"path": "/usr/X11R6/optical_holistic.oprc.chat",
+		"type": "sample"
+	},
+	{
+		"id": "e609c234-d1a1-40e7-80ec-aa966514a4c3",
+		"title": "Licensed Metal Salad",
+		"artists": ["Abraham Veum", "Jim Howell"],
+		"genres": ["Post-Punk", "Disco"],
+		"groups": ["Piano"],
+		"duration": 16,
+		"bpm": 120,
+		"path": "/mnt/firmware_payment_village.kml.btif",
+		"type": "loop"
+	},
+	{
+		"id": "19934df7-6ede-426a-a9a2-62716d40513d",
+		"title": "Handcrafted Rubber Table",
+		"artists": ["Kara Marks", "Johnnie Fahey"],
+		"genres": ["Psychedelic", "K-Pop"],
+		"groups": ["Vocals", "Piano"],
+		"duration": 28,
+		"bpm": 76,
+		"path": "/home/user/loan.atom.ma",
+		"type": "loop"
+	},
+	{
+		"id": "afeea8b1-6b3c-4281-878a-61e02217ac60",
+		"title": "Awesome Metal Bacon",
+		"artists": ["Joan Becker", "Joey Ratke"],
+		"genres": ["Experimental"],
+		"groups": ["Horns"],
+		"duration": 56,
+		"bpm": 110,
+		"path": "/usr/libexec/mississippi_parsing_dalasi.texinfo.cdmic",
+		"type": "loop"
+	},
+	{
+		"id": "cbbf0f2f-e756-47b9-9f66-f15da34529d5",
+		"title": "Incredible Rubber Fish",
+		"artists": ["Leroy Thompson", "Shawn Mohr", "Delia Kutch", "Margarita Ferry"],
+		"genres": ["Psychedelic", "Celtic"],
+		"groups": ["Field Recordings", "Horns"],
+		"duration": 36,
+		"bpm": 130,
+		"path": "/var/tmp/intelligent.msl.afp",
+		"type": "misc"
+	},
+	{
+		"id": "18de7819-a1de-4f0f-b5ef-310940a3e49b",
+		"title": "Small Wooden Towels",
+		"artists": ["Miguel Jones", "Henry Schiller", "Violet Shields", "Marie Howe"],
+		"genres": ["Minimal Techno", "Indie", "Industrial", "Electronic", "Synth-Pop"],
+		"groups": ["Horns", "Field Recordings"],
+		"duration": 64,
+		"bpm": 134,
+		"path": "/opt/facilitate.setreg.xz",
+		"type": "loop"
+	},
+	{
+		"id": "c284e4aa-8304-429e-92db-f6f592022752",
+		"title": "Fantastic Concrete Computer",
+		"artists": ["Don Bergstrom", "Sandra Feest", "Andres Kshlerin", "Calvin Kuhn"],
+		"genres": ["Dance"],
+		"groups": ["Bass", "Drums"],
+		"duration": 36,
+		"bpm": 138,
+		"path": "/usr/libexec/ib_primary_toys.cww.rnc",
+		"type": "misc"
+	},
+	{
+		"id": "376e123b-35c2-4985-9a62-d4b3885f69d5",
+		"title": "Incredible Frozen Table",
+		"artists": ["Ira Mante", "Ellis Pfeffer", "Gilbert Goyette"],
+		"genres": ["EDM"],
+		"groups": ["Drums", "Electric Guitars"],
+		"duration": 56,
+		"bpm": 148,
+		"path": "/Users/national_avon_communications.twd.lwp",
+		"type": "misc"
+	},
+	{
+		"id": "d9df41b2-1dfb-4615-b4ce-a6fc97b24ce1",
+		"title": "Sleek Granite Bacon",
+		"artists": [
+			"Clark Corwin",
+			"Leigh Kozey",
+			"Christina Shields",
+			"Colin Harris",
+			"Lyle Gislason",
+			"Gretchen Nader"
+		],
+		"genres": ["Lo-fi", "Progressive Rock", "Country", "Lo-fi"],
+		"groups": ["Percussion", "Percussion"],
+		"duration": 60,
+		"bpm": 124,
+		"path": "/usr/libdata/capacitor_compressing_port.dd2.xlt",
+		"type": "misc"
+	},
+	{
+		"id": "0ea2ed77-0b50-4117-be9d-a55a9c572ed8",
+		"title": "Handcrafted Metal Pizza",
+		"artists": ["Shari Gorczany"],
+		"genres": ["Lo-fi", "Alternative Rock", "Shoegaze", "Punk"],
+		"groups": ["Synthesizers", "Electric Guitars", "Synthesizers"],
+		"duration": 24,
+		"bpm": 100,
+		"path": "/var/chicken_italy.pclxl.fgd",
+		"type": "sample"
+	},
+	{
+		"id": "a75a922c-7744-4572-a412-4568940737b9",
+		"title": "Handcrafted Frozen Fish",
+		"artists": ["Rex Little"],
+		"genres": ["Jazz", "Pop", "Pop"],
+		"groups": ["Drums"],
+		"duration": 60,
+		"bpm": 132,
+		"path": "/usr/ports/mississippi_soap_associate.mdi.woff2",
+		"type": "sample"
+	},
+	{
+		"id": "822cd5a8-081c-496a-9891-ed07e1451789",
+		"title": "Practical Fresh Keyboard",
+		"artists": ["Nora Roberts", "Austin Schroeder", "Gene Cummerata"],
+		"genres": ["Reggae", "Baroque"],
+		"groups": ["Vocals"],
+		"duration": 36,
+		"bpm": 90,
+		"path": "/selinux/communities_technologies_orchestrator.png.mag",
+		"type": "loop"
+	},
+	{
+		"id": "ac9a7508-bf0f-48d0-8584-1f4aabde9934",
+		"title": "Gorgeous Plastic Bacon",
+		"artists": ["Harold Abernathy"],
+		"genres": ["Lo-fi", "Techno", "Christian", "Ambient"],
+		"groups": ["Piano", "Vocals"],
+		"duration": 44,
+		"bpm": 110,
+		"path": "/usr/libdata/rss_toys_account.jpgv.fh4",
+		"type": "misc"
+	},
+	{
+		"id": "546e86e2-e0bc-4cc7-a99e-2ea15c1a1ad4",
+		"title": "Handmade Cotton Chicken",
+		"artists": ["Loren Wolff", "Willard Kirlin", "Charlie Dicki"],
+		"genres": ["Alternative Rock", "Neo Soul", "Metalcore"],
+		"groups": ["Percussion", "Percussion", "Samples"],
+		"duration": 56,
+		"bpm": 116,
+		"path": "/Applications/transition_plastic_strategy.stk.ecelp9600",
+		"type": "loop"
+	},
+	{
+		"id": "5e41f3a2-896a-4a01-bf21-0bc050df160c",
+		"title": "Small Soft Computer",
+		"artists": ["Caroline Hills"],
+		"genres": ["Alternative Rock"],
+		"groups": ["Drums", "Samples", "Electric Guitars"],
+		"duration": 64,
+		"bpm": 122,
+		"path": "/net/generic.blb.bh2",
+		"type": "sample"
+	},
+	{
+		"id": "58098752-ee99-4e06-936c-0af4893bce3a",
+		"title": "Generic Metal Ball",
+		"artists": ["Jeremiah McLaughlin", "Lee Grady", "Hugh Stracke"],
+		"genres": ["Ska", "Dream Pop", "Progressive Rock"],
+		"groups": ["Samples", "Bass"],
+		"duration": 24,
+		"bpm": 166,
+		"path": "/opt/fantastic_user_centric_withdrawal.weba.daf",
+		"type": "sample"
+	},
+	{
+		"id": "2a1cc66e-b5d8-4d6a-ad99-08fe0f24dc2f",
+		"title": "Incredible Soft Bike",
+		"artists": ["Clarence Satterfield", "Alicia Berge", "Antonia Fahey", "Conrad Davis"],
+		"genres": ["Industrial", "Pop", "Grunge"],
+		"groups": ["Horns", "Synthesizers", "Drums"],
+		"duration": 48,
+		"bpm": 118,
+		"path": "/opt/share/deposit.vor.pkipath",
+		"type": "loop"
+	},
+	{
+		"id": "84c00ea6-dbcc-49b9-a1c5-169a5045e044",
+		"title": "Sleek Rubber Tuna",
+		"artists": ["Doris Roberts"],
+		"genres": ["Country", "Christian"],
+		"groups": ["Bass", "Electric Guitars"],
+		"duration": 36,
+		"bpm": 108,
+		"path": "/usr/libexec/synergistic_sharable_kwacha.roa.jng",
+		"type": "loop"
+	},
+	{
+		"id": "7cbac1e3-daf2-4abf-b5b7-f1ce103c5b5a",
+		"title": "Awesome Plastic Sausages",
+		"artists": [
+			"Marcia Schowalter",
+			"Johanna Bayer",
+			"Georgia Will",
+			"Samantha Goldner",
+			"Gretchen Balistreri"
+		],
+		"genres": ["Opera", "Motown"],
+		"groups": ["Electric Guitars", "Field Recordings", "Samples"],
+		"duration": 48,
+		"bpm": 170,
+		"path": "/home/user/dir/synthesize.wad.c4u",
+		"type": "sample"
+	},
+	{
+		"id": "71e0a4db-3d2d-44c7-8219-6f16c0a7bf8f",
+		"title": "Ergonomic Metal Bike",
+		"artists": ["Bradley Krajcik", "Alan Corkery", "Rosemarie O'Kon"],
+		"genres": ["Emo"],
+		"groups": ["Electric Guitars", "Bass", "Bass"],
+		"duration": 48,
+		"bpm": 70,
+		"path": "/Library/specialist_refined.torrent.flw",
+		"type": "loop"
+	},
+	{
+		"id": "d8f0ca39-0e3b-4e93-878b-c826f9e6087b",
+		"title": "Handmade Cotton Chicken",
+		"artists": ["Angelo Prosacco", "Alison Kertzmann"],
+		"genres": ["Rap", "Gospel", "Grunge", "Baroque", "Latin"],
+		"groups": ["Drums"],
+		"duration": 64,
+		"bpm": 138,
+		"path": "/var/square_bacon.h264.lbe",
+		"type": "misc"
+	},
+	{
+		"id": "96dd1ad0-54fb-42da-b694-e8ba0271600c",
+		"title": "Awesome Wooden Tuna",
+		"artists": [
+			"Priscilla Wisozk",
+			"Grant Conroy",
+			"Sergio Roob",
+			"Harold Grant",
+			"Miriam Raynor",
+			"Earl Stark"
+		],
+		"genres": ["Emo", "Reggae", "Minimal Techno", "Techno"],
+		"groups": ["Bass", "Percussion", "Percussion"],
+		"duration": 48,
+		"bpm": 72,
+		"path": "/opt/bin/dinar_unbranded_24_7.hpid.me",
+		"type": "misc"
+	},
+	{
+		"id": "1545889a-fe94-4a96-9ca2-d74600669b8b",
+		"title": "Refined Rubber Fish",
+		"artists": ["Justin Batz", "Latoya Ryan", "Wade Nikolaus", "Johnnie McCullough"],
+		"genres": ["Post-Punk", "Grunge"],
+		"groups": ["Vocals", "Field Recordings", "Percussion"],
+		"duration": 32,
+		"bpm": 146,
+		"path": "/etc/defaults/object_based.chrt.bed",
+		"type": "misc"
+	},
+	{
+		"id": "bda22e56-6186-4698-a9a6-9e25792a6d75",
+		"title": "Sleek Steel Ball",
+		"artists": [
+			"Claude Koss",
+			"Vicky Kuphal",
+			"Jeffrey Hessel",
+			"Ronnie O'Keefe",
+			"Cecilia Schumm"
+		],
+		"genres": ["Electro", "Indie", "Techno", "Bluegrass"],
+		"groups": ["Horns", "Samples", "Synthesizers"],
+		"duration": 36,
+		"bpm": 134,
+		"path": "/home/accounts_wireless_intermediate.teacher.icc",
+		"type": "misc"
+	},
+	{
+		"id": "b64f4270-a342-42ea-be94-1c4b2f3a6f5c",
+		"title": "Gorgeous Soft Bacon",
+		"artists": [
+			"Samuel O'Keefe",
+			"Billie Krajcik",
+			"Bonnie Sawayn",
+			"Juana Weber",
+			"Isabel Romaguera",
+			"Rebecca Turcotte"
+		],
+		"genres": ["Downtempo", "Chamber Music", "Funk", "Gospel"],
+		"groups": ["Vocals", "Electric Guitars"],
+		"duration": 48,
+		"bpm": 118,
+		"path": "/Users/tunisian_indigo_methodical.xdm.xsd",
+		"type": "misc"
+	},
+	{
+		"id": "0174184f-fd2d-4cef-b8a9-761bc7f60ad6",
+		"title": "Handmade Metal Bacon",
+		"artists": ["Jacob Bernier", "Kurt Marquardt"],
+		"genres": ["Psychedelic"],
+		"groups": ["Field Recordings"],
+		"duration": 8,
+		"bpm": 84,
+		"path": "/opt/lib/chief_rss_deposit.dataless.wvx",
+		"type": "sample"
+	},
+	{
+		"id": "eb5abd26-433b-4172-b06c-c631a5f1b19f",
+		"title": "Handcrafted Steel Bike",
+		"artists": ["Santiago Reilly", "Angel Boyer", "Maureen Ruecker", "Joshua Rohan", "Jon Wyman"],
+		"genres": ["Folk", "Metalcore", "Heavy Metal"],
+		"groups": ["Drums", "Horns", "Bass"],
+		"duration": 32,
+		"bpm": 162,
+		"path": "/Library/tactics_buckinghamshire_black.mp2.sass",
+		"type": "sample"
+	},
+	{
+		"id": "24fff026-38cd-42ef-b206-e9c7107aad2c",
+		"title": "Fantastic Steel Chicken",
+		"artists": ["Phyllis Hayes", "Heather Bruen", "Angel Ebert"],
+		"genres": ["R&B"],
+		"groups": ["Vocals", "Piano", "Field Recordings"],
+		"duration": 20,
+		"bpm": 90,
+		"path": "/usr/obj/virtual_orchestrator_incredible.ppam.f4v",
+		"type": "sample"
+	},
+	{
+		"id": "f69ee428-bb82-44b0-8fc5-8ba91ae44a72",
+		"title": "Handmade Plastic Chicken",
+		"artists": ["Mandy Schultz", "Benny Rosenbaum"],
+		"genres": ["Funk"],
+		"groups": ["Field Recordings", "Percussion"],
+		"duration": 60,
+		"bpm": 74,
+		"path": "/usr/local/bin/savings.setpay.srt",
+		"type": "loop"
+	},
+	{
+		"id": "af3fa0b7-9b52-446c-9f94-a13d5682deef",
+		"title": "Sleek Concrete Soap",
+		"artists": [
+			"Bryant Cronin",
+			"Shirley Shields",
+			"Ada Douglas",
+			"Bryan Bogan",
+			"Cecil Kshlerin",
+			"Donna Marvin"
+		],
+		"genres": ["Lo-fi", "Christian", "Alternative Rock"],
+		"groups": ["Electric Guitars", "Electric Guitars", "Field Recordings"],
+		"duration": 44,
+		"bpm": 150,
+		"path": "/home/user/architectures.atc.ltf",
+		"type": "sample"
+	},
+	{
+		"id": "4c3b8cd7-71ee-4c8d-9d44-77b3f2ceb5f6",
+		"title": "Gorgeous Steel Fish",
+		"artists": [
+			"Jennifer Kunde",
+			"Marjorie Gutkowski",
+			"Willis Klocko",
+			"Paulette Kerluke",
+			"Bernadette Schroeder",
+			"Terrence Bauch"
+		],
+		"genres": ["Celtic", "Electronic"],
+		"groups": ["Piano", "Bass", "Piano"],
+		"duration": 32,
+		"bpm": 164,
+		"path": "/usr/share/albania.mny.ggt",
+		"type": "loop"
+	},
+	{
+		"id": "f01e6b92-c8e9-46ea-ba7f-cafaea6735f5",
+		"title": "Handmade Cotton Chair",
+		"artists": ["Juanita Hettinger", "Margarita Friesen"],
+		"genres": ["Progressive Rock", "Chiptune", "Garage Rock", "Pop", "Chamber Music"],
+		"groups": ["Piano", "Horns", "Electric Guitars"],
+		"duration": 60,
+		"bpm": 120,
+		"path": "/usr/libdata/sdd.fg5.ink",
+		"type": "misc"
+	},
+	{
+		"id": "16f9b539-a0a9-4c03-861b-4036f15af730",
+		"title": "Refined Cotton Bike",
+		"artists": ["Elizabeth Spencer"],
+		"genres": ["Disco", "Neo Soul"],
+		"groups": ["Samples"],
+		"duration": 24,
+		"bpm": 146,
+		"path": "/opt/share/kwanza_multi_tiered_usability.cdy.mpy",
+		"type": "sample"
+	},
+	{
+		"id": "46ec7aa0-4500-4512-b33e-da0c1155a910",
+		"title": "Ergonomic Granite Pizza",
+		"artists": [
+			"Dan Hermann",
+			"Nellie Gutmann",
+			"Glenda Zemlak",
+			"Jordan Gutmann",
+			"Ruben Morissette",
+			"Kelvin Littel"
+		],
+		"genres": ["Chicano", "Trap", "Gregorian Chant"],
+		"groups": ["Percussion", "Piano"],
+		"duration": 24,
+		"bpm": 70,
+		"path": "/var/mail/intangible.mp2.fg5",
+		"type": "misc"
+	},
+	{
+		"id": "228272d9-b257-4ded-8a8c-09d7c854c076",
+		"title": "Tasty Concrete Sausages",
+		"artists": ["Leticia Glover", "Alyssa Wiegand", "Patsy Rath", "Tanya Champlin"],
+		"genres": ["Salsa", "Rock", "Latin", "Dance", "Celtic"],
+		"groups": ["Synthesizers"],
+		"duration": 40,
+		"bpm": 130,
+		"path": "/System/parsing.uu.cct",
+		"type": "sample"
+	},
+	{
+		"id": "58a5a06b-61c0-4aed-82c1-c738950672ac",
+		"title": "Awesome Soft Shirt",
+		"artists": ["Noah Kozey", "Cathy Conroy"],
+		"genres": ["Punk", "Cumbia"],
+		"groups": ["Samples", "Horns"],
+		"duration": 28,
+		"bpm": 146,
+		"path": "/root/taka_port.mlp.uvvp",
+		"type": "misc"
+	},
+	{
+		"id": "ac79e019-217b-4f90-a7bf-a79d46231902",
+		"title": "Licensed Steel Chips",
+		"artists": ["Evan Dibbert"],
+		"genres": ["Electronic", "Downtempo", "Techno", "Salsa"],
+		"groups": ["Bass", "Samples"],
+		"duration": 56,
+		"bpm": 72,
+		"path": "/private/var/district.rnc.xlw",
+		"type": "sample"
+	},
+	{
+		"id": "07e6656a-79ba-4786-b184-577c23e1826d",
+		"title": "Handmade Granite Chips",
+		"artists": ["Faye Beier", "Lydia Ratke", "Toby Sawayn", "Cristina Corkery"],
+		"genres": ["Disco", "R&B", "Funk", "Metalcore", "Salsa"],
+		"groups": ["Samples"],
+		"duration": 20,
+		"bpm": 170,
+		"path": "/usr/sbin/regional_buckinghamshire.hps.dvi",
+		"type": "misc"
+	},
+	{
+		"id": "ba6d9234-4706-4116-8d29-8c324d7783f0",
+		"title": "Handmade Metal Towels",
+		"artists": ["Sergio Emard", "Inez Pacocha"],
+		"genres": ["Lo-fi"],
+		"groups": ["Electric Guitars", "Bass"],
+		"duration": 64,
+		"bpm": 132,
+		"path": "/usr/lib/cross_platform_sdd.eot.pptx",
+		"type": "misc"
+	},
+	{
+		"id": "7e9906dd-522d-41b4-bcbd-d0ca0452d26c",
+		"title": "Refined Rubber Cheese",
+		"artists": ["Jorge Marquardt", "Boyd Johns"],
+		"genres": ["Latin", "Celtic", "Metalcore"],
+		"groups": ["Piano"],
+		"duration": 36,
+		"bpm": 70,
+		"path": "/root/wireless_content_protocol.fnc.osf",
+		"type": "sample"
+	},
+	{
+		"id": "df3b0f50-358f-456b-8fab-e486b2e60401",
+		"title": "Awesome Rubber Pants",
+		"artists": ["Nadine Jast", "Henrietta Leannon", "Clara Nader", "Jermaine McKenzie"],
+		"genres": ["Grunge", "Electronic", "Experimental", "Motown", "Christian"],
+		"groups": ["Horns"],
+		"duration": 44,
+		"bpm": 72,
+		"path": "/sys/input_holistic_manager.distz.ifb",
+		"type": "loop"
+	},
+	{
+		"id": "09ed56db-f8c1-4f05-a893-ca90bcad1a6f",
+		"title": "Intelligent Cotton Chips",
+		"artists": [
+			"Allan Anderson",
+			"Allison Kreiger",
+			"Sarah Rau",
+			"Nina Watsica",
+			"Corey Fisher",
+			"Anthony Goodwin"
+		],
+		"genres": ["Celtic"],
+		"groups": ["Horns", "Drums"],
+		"duration": 20,
+		"bpm": 144,
+		"path": "/usr/src/css_withdrawal.odb.rip",
+		"type": "sample"
+	},
+	{
+		"id": "1acaaf92-88ce-4767-b06d-f43a6afbb90d",
+		"title": "Fantastic Cotton Bike",
+		"artists": ["Krystal Strosin", "Rolando Reinger", "Viola Cronin"],
+		"genres": ["Garage Rock"],
+		"groups": ["Synthesizers"],
+		"duration": 24,
+		"bpm": 168,
+		"path": "/boot/back_end.sxc.gdl",
+		"type": "misc"
+	},
+	{
+		"id": "a9c8c09b-61f7-4d13-b65e-f4a73538294d",
+		"title": "Refined Fresh Soap",
+		"artists": [
+			"Derek Cartwright",
+			"Miranda Pfannerstill",
+			"Sylvia Dooley",
+			"Elsie Ortiz",
+			"Kelvin Aufderhar",
+			"Archie Pacocha"
+		],
+		"genres": ["Pop", "Downtempo"],
+		"groups": ["Vocals", "Horns"],
+		"duration": 12,
+		"bpm": 156,
+		"path": "/sbin/indexing_books.pkipath.sti",
+		"type": "misc"
+	},
+	{
+		"id": "3bc3877c-2f41-4307-adea-821d055230d4",
+		"title": "Rustic Wooden Chair",
+		"artists": ["Irving Pfeffer"],
+		"genres": ["Salsa", "Indie", "Chicano", "Rap", "Industrial"],
+		"groups": ["Bass", "Percussion", "Samples"],
+		"duration": 8,
+		"bpm": 70,
+		"path": "/opt/sbin/rwanda_loan.m1v.pcl",
+		"type": "loop"
+	},
+	{
+		"id": "d1b8f78a-a115-4588-b8cc-07fe3c483b01",
+		"title": "Refined Rubber Salad",
+		"artists": ["Jody Weber"],
+		"genres": ["Baroque", "Chicano", "Electronic", "Punk"],
+		"groups": ["Percussion", "Bass"],
+		"duration": 56,
+		"bpm": 138,
+		"path": "/mnt/incubate_models.fh7.iota",
+		"type": "misc"
+	},
+	{
+		"id": "80459107-aa41-42b0-95ac-88a2b10f1bcb",
+		"title": "Intelligent Wooden Shirt",
+		"artists": ["Terence Hand", "Mack Kuvalis", "Kathy Kiehn"],
+		"genres": ["Electro", "Rock", "Celtic", "Electronic", "House"],
+		"groups": ["Bass", "Percussion", "Synthesizers"],
+		"duration": 56,
+		"bpm": 116,
+		"path": "/sbin/associate_beac_practical.odb.tk",
+		"type": "loop"
+	},
+	{
+		"id": "f98b436d-c770-40f9-a66e-2c3df031cef9",
+		"title": "Fantastic Wooden Computer",
+		"artists": ["Susie Abernathy"],
+		"genres": ["K-Pop"],
+		"groups": ["Vocals"],
+		"duration": 48,
+		"bpm": 76,
+		"path": "/usr/obj/morph_supply_chains_connect.fhc.wmv",
+		"type": "loop"
+	},
+	{
+		"id": "e3bc54fd-f359-4c7c-800f-ccff25d81666",
+		"title": "Small Metal Car",
+		"artists": ["Christine Nolan", "Jody Bernier", "Julie Swaniawski", "Bethany Hintz"],
+		"genres": ["Ambient"],
+		"groups": ["Drums", "Vocals"],
+		"duration": 44,
+		"bpm": 84,
+		"path": "/var/borders.gxt.wmv",
+		"type": "sample"
+	},
+	{
+		"id": "61cf6bf5-ac87-43d9-b1bb-f96164edd488",
+		"title": "Small Frozen Tuna",
+		"artists": ["Erica Hettinger", "Edward Thompson", "Leonard Jacobs", "Melanie Schamberger"],
+		"genres": ["Reggae", "Ambient", "Rap"],
+		"groups": ["Horns", "Bass", "Synthesizers"],
+		"duration": 16,
+		"bpm": 98,
+		"path": "/etc/mail/tools_index_directional.dist.uvvs",
+		"type": "loop"
+	},
+	{
+		"id": "ca19457f-2d35-4cc8-881f-9bb10e79dccd",
+		"title": "Fantastic Fresh Salad",
+		"artists": [
+			"Jessie Hyatt",
+			"Florence Collins",
+			"Austin Grimes",
+			"Adrian Gottlieb",
+			"Bryan Champlin"
+		],
+		"genres": ["R&B"],
+		"groups": ["Field Recordings", "Vocals"],
+		"duration": 32,
+		"bpm": 96,
+		"path": "/Users/deposit_reactive_fresh.joda.pps",
+		"type": "sample"
+	},
+	{
+		"id": "4b95918c-b752-475a-81aa-151b14a4ff85",
+		"title": "Fantastic Metal Bike",
+		"artists": ["Jeremiah Predovic", "Maureen Keeling"],
+		"genres": ["Gospel"],
+		"groups": ["Piano", "Samples"],
+		"duration": 40,
+		"bpm": 82,
+		"path": "/boot/defaults/mission_critical_borders_transmitting.3gpp.eps",
+		"type": "sample"
+	},
+	{
+		"id": "d133b5d7-9550-419c-a1fd-52b0906163ce",
+		"title": "Incredible Steel Tuna",
+		"artists": ["Mathew Schinner"],
+		"genres": ["Lo-fi", "Reggae", "Blues"],
+		"groups": ["Samples", "Bass", "Horns"],
+		"duration": 56,
+		"bpm": 100,
+		"path": "/lib/policy_focused_shoes.fcs.csp",
+		"type": "loop"
+	},
+	{
+		"id": "02de3953-0f71-40d7-82e1-d0d6c0e03416",
+		"title": "Intelligent Wooden Keyboard",
+		"artists": ["Jana Fritsch", "Anita Will"],
+		"genres": ["Alternative Rock", "Electronic", "Techno", "Heavy Metal", "Celtic"],
+		"groups": ["Synthesizers", "Horns", "Piano"],
+		"duration": 24,
+		"bpm": 126,
+		"path": "/home/purple_shore_home.npx.box",
+		"type": "sample"
+	},
+	{
+		"id": "db353b93-e7cc-40d7-b395-ebdf8a3ae17e",
+		"title": "Refined Soft Shirt",
+		"artists": ["Elmer Weimann", "Rene Stoltenberg", "Shelley Schmeler", "Blanche Windler"],
+		"genres": ["Hip Hop", "Latin", "Trip Hop", "Disco", "Electro"],
+		"groups": ["Horns", "Piano"],
+		"duration": 28,
+		"bpm": 106,
+		"path": "/lost+found/digital.xpi.ksp",
+		"type": "loop"
+	}
+]

@@ -5,13 +5,18 @@
 
 	import { trackData } from './stores';
 
+	import json from './data.json';
+
 	let { data } = $props();
+
+	// console.log(data.tracks); IMPORTED API KEY
+	console.log(json);
 
 	// USE THIS $derived() RUNE
 	const tracklist = $derived($trackData.tracklist);
 
 	$effect(() => {
-		const importedTracks = data.tracks;
+		const importedTracks = json;
 		trackData.setTracklist(Array.from(importedTracks));
 	});
 

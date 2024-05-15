@@ -4,17 +4,15 @@
 	import Audio from '$lib/assets/audio_wave.png';
 	import Sync from '$lib/assets/audio_sync.png';
 
-	import { trackData } from './stores';
+	import { trackData, player } from './stores';
 
-	let { data } = $props();
-
-	let tracklist = $derived($trackData.tracklist);
+	const { isPlaying } = $derived($player);
 
 	const onPlayPause = () => {
 		// audioData.update((item) => ({ ...item, isPlaying: !item.isPlaying }));
 
-		trackData.togglePlay();
-		console.log();
+		player.togglePlay();
+		console.log(isPlaying);
 	};
 	/*
 	I want to optimize this, but I don't understand how
@@ -31,7 +29,7 @@
 	p-4 max-w-full bg-black max-h-12"
 >
 	<button onclick={onPlayPause}>
-		<img class="size-8 cursor-pointer" src={$trackData.isPlaying ? Play : Pause} alt="" />
+		<img class="size-8 cursor-pointer" src={isPlaying ? Play : Pause} alt="" />
 	</button>
 	<div class="flex-grow">
 		<img class="h-6 w-full cursor-pointer" src={Audio} alt="" />
