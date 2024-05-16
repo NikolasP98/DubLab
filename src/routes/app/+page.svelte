@@ -3,33 +3,33 @@
 	import Picker from './TrackPicker.svelte';
 	import Player from './Player.svelte';
 
-	import { trackData } from './stores';
+	// import { trackData } from './stores';
+	import { trackData } from './playerStore.svelte';
 
 	import json from './data.json';
 
 	let { data } = $props();
 
 	// console.log(data.tracks); IMPORTED API KEY
-	console.log(json);
 
 	// USE THIS $derived() RUNE
-	const tracklist = $derived($trackData.tracklist);
+	let { trackList } = $derived(trackData);
 
 	$effect(() => {
 		const importedTracks = json;
-		trackData.setTracklist(Array.from(importedTracks));
+		trackData.trackList = Array.from(importedTracks);
 	});
 
 	$effect(() => {
 		const groupSet = new Set();
 
-		for (const track of tracklist) {
+		for (const track of trackList) {
 			for (const group of track.groups) {
 				groupSet.add(group);
 			}
 		}
 
-		trackData.setInputTypes(Array.from(groupSet));
+		trackData.inputTypes = Array.from(groupSet);
 	});
 </script>
 

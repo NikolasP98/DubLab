@@ -4,15 +4,14 @@
 	import Audio from '$lib/assets/audio_wave.png';
 	import Sync from '$lib/assets/audio_sync.png';
 
-	import { trackData, player } from './stores';
+	import { trackData, player } from './playerStore.svelte';
 
-	const { isPlaying } = $derived($player);
+	const { isPlaying } = $derived(player);
 
 	const onPlayPause = () => {
 		// audioData.update((item) => ({ ...item, isPlaying: !item.isPlaying }));
 
 		player.togglePlay();
-		console.log(isPlaying);
 	};
 	/*
 	I want to optimize this, but I don't understand how

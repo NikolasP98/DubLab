@@ -1,7 +1,7 @@
 <script>
-	import { trackData } from './stores';
+	import { trackData } from './playerStore.svelte';
 
-	const inputTypes = $derived($trackData.inputTypes);
+	const { inputTypes } = $derived(trackData);
 </script>
 
 <div class="flex justify-start mb-2 overflow-x-scroll gap-4 pl-4 no-scrollbar">
