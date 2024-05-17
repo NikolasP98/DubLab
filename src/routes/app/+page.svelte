@@ -4,7 +4,7 @@
 	import Player from './Player.svelte';
 
 	// import { trackData } from './stores';
-	import { trackData } from '$lib/stores/playerStore.svelte';
+	import { trackData } from '$lib/stores/audioStore.svelte';
 
 	import json from './data.json';
 

@@ -1,6 +1,7 @@
 <script>
 	import { circleData } from '$lib/stores/circleStore.svelte';
-	import Circle from '$lib/components/circles/Circle.svelte';
+	import Circle from './Circle.svelte';
+	import MainCircle from './MainCircle.svelte';
 
 	let { isLoaded, data } = $props();
 
@@ -33,12 +34,11 @@
 
 		mainCircle = miniCircles.shift();
 
-		circleData.mainCircle = 
-			mainCircle;
-		circleData.circleContent = miniCircles
+		circleData.mainCircle = mainCircle;
+		circleData.circleContent = miniCircles;
 		isLoaded = true;
 
-		console.log(isLoaded)
+		console.log(isLoaded);
 	});
 
 	const overlapsOtherCircles = (targetCircle, x, y, circles) => {
@@ -64,7 +64,7 @@
 		role="group"
 	>
 		{#if circleData}
-			<Circle primary data={circleData.mainCircle} />
+			<MainCircle primary data={circleData.mainCircle} />
 
 			{#if circleData.circles}
 				{#each circleData.circles as data, i}

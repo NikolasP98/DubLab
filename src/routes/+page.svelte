@@ -5,8 +5,9 @@
 	import Logo from '$lib/assets/logo.png';
 
 	let { data } = $props();
+	let isLoaded = $state(true);
 
-	let isLoaded = $state(false);
+	$inspect(isLoaded);
 </script>
 
 <div id="trendy" class="min-h-screen size-full flex flex-col items-center justify-center">

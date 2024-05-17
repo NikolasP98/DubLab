@@ -1,5 +1,5 @@
 <script>
-	import { trackData } from '../../lib/stores/playerStore.svelte';
+	import { trackData } from '$lib/stores/audioStore.svelte';
 
 	const { inputTypes } = $derived(trackData);
 </script>
