@@ -4,7 +4,7 @@
 	import Audio from '$lib/assets/audio_wave.png';
 	import Sync from '$lib/assets/audio_sync.png';
 
-	import { trackData, player } from './playerStore.svelte';
+	import { trackData, player } from '../../lib/stores/playerStore.svelte';
 
 	const { isPlaying } = $derived(player);
 

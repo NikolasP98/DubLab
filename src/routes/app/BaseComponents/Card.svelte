@@ -1,5 +1,5 @@
 <script>
-	import { player } from '../playerStore.svelte';
+	import { player } from '../../../lib/stores/playerStore.svelte';
 
 	let { track } = $props();
 

@@ -1,6 +1,6 @@
 <script>
 	// import { trackData } from './stores';
-	import { trackData } from './playerStore.svelte';
+	import { trackData } from '../../lib/stores/playerStore.svelte';
 
 	import Card from './BaseComponents/Card.svelte';
 

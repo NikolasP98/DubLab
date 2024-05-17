@@ -1,10 +1,10 @@
 <script>
-	import { circleData } from './stores';
+	import { circleData } from '$lib/stores/circleStore.svelte';
 	import Circle from '$lib/components/circles/Circle.svelte';
 
 	let { isLoaded, data } = $props();
 
-	let miniCircleContainer;
+	let miniCircleContainer = $state();
 
 	const calculatePositions = (numCircles) => {
 		// Example: Place circles in a larger circle
@@ -33,11 +33,12 @@
 
 		mainCircle = miniCircles.shift();
 
-		circleData.set({
-			mainCircle,
-			circles: miniCircles
-		});
-		isLoaded.set(true);
+		circleData.mainCircle = 
+			mainCircle;
+		circleData.circleContent = miniCircles
+		isLoaded = true;
+
+		console.log(isLoaded)
 	});
 
 	const overlapsOtherCircles = (targetCircle, x, y, circles) => {
@@ -56,17 +57,17 @@
 	};
 </script>
 
-{#if $isLoaded}
+{#if isLoaded}
 	<div
 		bind:this={miniCircleContainer}
 		class="relative size-full flex items-center justify-center bg-green-100"
 		role="group"
 	>
-		{#if $circleData}
-			<Circle primary data={$circleData.mainCircle} />
+		{#if circleData}
+			<Circle primary data={circleData.mainCircle} />
 
-			{#if $circleData.circles}
-				{#each $circleData.circles as data, i}
+			{#if circleData.circles}
+				{#each circleData.circles as data, i}
 					<Circle {data} />
 				{/each}
 			{/if}

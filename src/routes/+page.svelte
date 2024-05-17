@@ -1,5 +1,4 @@
 <script>
-	import { writable } from 'svelte/store';
 	import Splash from '$lib/components/Splashscreen.svelte';
 	import Circles from '$lib/components/circles/CircleContainer.svelte';
 
@@ -7,7 +6,7 @@
 
 	let { data } = $props();
 
-	let isLoaded = writable(false);
+	let isLoaded = $state(false);
 </script>
 
 <div id="trendy" class="min-h-screen size-full flex flex-col items-center justify-center">

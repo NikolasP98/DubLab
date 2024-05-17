@@ -52,7 +52,6 @@ function createTrackLibrary(initial: InitialAudioData) {
 	}
 
 	return {
-		trackList,
 		get trackList() {
 			return trackList;
 		},

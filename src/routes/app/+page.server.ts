@@ -1,4 +1,4 @@
-import { SECRET_SUPABASE_API_KEY } from '$env/static/private';
+// import { SUPABASE_API_KEY } from '$env/static/private';
 
 import { error } from '@sveltejs/kit';
 import type { Load } from '@sveltejs/kit';
@@ -15,7 +15,7 @@ export const load: Load = async ({ fetch }) => {
 		// }
 
 		return {
-			tracks: [SECRET_SUPABASE_API_KEY]
+			tracks: [SUPABASE_API_KEY]
 		};
 	} catch (err) {
 		throw error(500, `Failed to load track data: ${err.message}`);

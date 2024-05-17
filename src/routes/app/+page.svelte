@@ -4,11 +4,11 @@
 	import Player from './Player.svelte';
 
 	// import { trackData } from './stores';
-	import { trackData } from './playerStore.svelte';
+	import { trackData } from '$lib/stores/playerStore.svelte';
 
 	import json from './data.json';
 
-	let { data } = $props();
+	// let { data } = $props();
 
 	// console.log(data.tracks); IMPORTED API KEY
 
