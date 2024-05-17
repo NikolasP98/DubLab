@@ -15,7 +15,8 @@ export const load: Load = async ({ fetch }) => {
 		// }
 
 		return {
-			tracks: [SUPABASE_API_KEY]
+			tracks: []
+			// tracks: [SUPABASE_API_KEY]
 		};
 	} catch (err) {
 		throw error(500, `Failed to load track data: ${err.message}`);
