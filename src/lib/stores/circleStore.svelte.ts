@@ -1,27 +1,31 @@
-function createCircleStore(initial){
-    let circleContent = $state([])
-    let mainCircle = $state(null)
+type Circle = {
+	mainCircle: any;
+};
 
-    function switchMainCircle(track){
+type InitialData = {
+	circleData: Circle[];
+};
 
-    }
-    
+function createCircleStore(initial: Circle[]) {
+	let mainCircle = $state(initial);
+	let otherCircles = $state([]);
 
-    return {
-        get circleContent(){
-            return circleData
-        },
-        set circleContent(newContent) {
-            circleContent = newContent
-        },
-        get mainCircle() {
-            return mainCircle
-        },
-        set mainCircle(newTrack){
-            mainCircle = newTrack
-        }
+	function switchMainCircle(track) {}
 
-    }
+	return {
+		get circleContent() {
+			return circleData;
+		},
+		set circleContent(newContent) {
+			otherCircles = newContent;
+		},
+		get mainCircle() {
+			return mainCircle;
+		},
+		set mainCircle(newTrack) {
+			mainCircle = newTrack;
+		}
+	};
 }
 
 export const circleData = createCircleStore([]);

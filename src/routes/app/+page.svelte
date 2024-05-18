@@ -1,12 +1,12 @@
 <script>
-	import FilterNav from './HeaderPills.svelte';
-	import Picker from './TrackPicker.svelte';
-	import Player from './Player.svelte';
+	import FilterNav from '$lib/components/app/HeaderPills.svelte';
+	import Picker from '$lib/components/app/TrackPicker.svelte';
+	import Player from '$lib/components/app/Player.svelte';
 
 	// import { trackData } from './stores';
 	import { trackData } from '$lib/stores/audioStore.svelte';
 
-	import json from './data.json';
+	import json from '../data.json';
 
 	// let { data } = $props();
 

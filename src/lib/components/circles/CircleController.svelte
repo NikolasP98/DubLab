@@ -3,7 +3,7 @@
 	import Circle from './Circle.svelte';
 	import MainCircle from './MainCircle.svelte';
 
-	let { isLoaded, data } = $props();
+	let { isLoaded } = $props();
 
 	let miniCircleContainer = $state();
 
@@ -12,7 +12,7 @@
 		const radius = 300; // Radius of the larger circle
 		const positions = [];
 
-		for (let i = 0; i < numCircles; i++) {
+		for (let i = 1; i < numCircles; i++) {
 			const angle = (i / numCircles) * 2 * Math.PI;
 			const x = 300 + radius * Math.cos(angle);
 			const y = 300 + radius * Math.sin(angle);
@@ -64,7 +64,7 @@
 		role="group"
 	>
 		{#if circleData}
-			<MainCircle primary data={circleData.mainCircle} />
+			<MainCircle data={circleData.mainCircle} />
 
 			{#if circleData.circles}
 				{#each circleData.circles as data, i}

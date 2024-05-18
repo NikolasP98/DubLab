@@ -1,13 +1,21 @@
 <script>
 	import Splash from '$lib/components/Splashscreen.svelte';
-	import Circles from '$lib/components/circles/CircleContainer.svelte';
+	import Circles from '$lib/components/circles/CircleController.svelte';
 
-	import Logo from '$lib/assets/logo.png';
+	import Logo from '$assets/logo.png';
 
-	let { data } = $props();
+	import { trackData } from '$lib/stores/audioStore.svelte';
+	import json from './data.json';
+
+	// let { data } = $props();
 	let isLoaded = $state(true);
 
-	$inspect(isLoaded);
+	$inspect(isLoaded).with(console.log);
+
+	$effect(() => {
+		const importedTracks = json;
+		trackData.trackList = Array.from(importedTracks);
+	});
 </script>
 
 <div id="trendy" class="min-h-screen size-full flex flex-col items-center justify-center">
@@ -17,7 +25,7 @@
 		<img class="max-w-24" src={Logo} alt="" />
 	</header>
 
-	<Circles {data} {isLoaded} />
+	<Circles {isLoaded} />
 </div>
 
 <style>

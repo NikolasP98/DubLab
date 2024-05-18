@@ -13,8 +13,6 @@ const initialData: InitialAudioData = {
 	inputTypes: []
 };
 function createTrackLibrary(initial: InitialAudioData) {
-	console.log('test');
-
 	let trackList = $state(initial.tracklist);
 	let inputTypes = $state(initial.inputTypes);
 

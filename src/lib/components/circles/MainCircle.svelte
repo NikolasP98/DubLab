@@ -1,6 +1,11 @@
 <script>
+	import { spring, tweened } from 'svelte/motion';
+	import { Vector2D } from '$lib/utilities/Vector2D';
+
 	let { data } = $props();
 	let textContainer;
+
+	let currentData = $state(data);
 
 	const rotation = spring(0, {
 		// duration: 400
@@ -9,6 +14,7 @@
 	});
 
 	$effect(async () => {
+		console.log(currentData);
 		if (textContainer) {
 			curveText();
 
@@ -62,17 +68,13 @@
 	};
 </script>
 
-<div
-	onmousemove={moveHandler}
-	onmouseenter={hoverHandler}
-	onmouseleave={hoverLeave}
-	role="figure"
-	class="circle bg-red-600 flex justify-center items-center rounded-full"
->
+<!-- onmouseenter={hoverHandler} -->
+<!-- onmouseleave={hoverLeave} -->
+<div role="figure" class="circle bg-red-600 flex justify-center items-center rounded-full">
 	<!-- style="left:{$position.x}px; top:{$position.y}px;" -->
-	{#if data.titles}
-		{@render titles(data.titles)}
-	{/if}
+	<!-- {#if currentData.titles}
+		{@render titles(currentData.titles)}
+	{/if} -->
 </div>
 
 {#snippet titles(titles)}

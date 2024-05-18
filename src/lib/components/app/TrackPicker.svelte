@@ -1,8 +1,7 @@
 <script>
-	// import { trackData } from './stores';
 	import { trackData } from '$lib/stores/audioStore.svelte';
 
-	import Card from './BaseComponents/Card.svelte';
+	import Card from '$lib/components/app/Card.svelte';
 
 	const { trackList } = $derived(trackData);
 </script>

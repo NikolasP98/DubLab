@@ -2,7 +2,7 @@
 	import { spring, tweened } from 'svelte/motion';
 	import { Vector2D } from '$lib/utilities/Vector2D';
 
-	let { data, primary = false } = $props();
+	let { data } = $props();
 	let textContainer;
 
 	const rotation = spring(0, {

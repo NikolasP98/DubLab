@@ -26,6 +26,7 @@
 	"type": "module",
 	"dependencies": {
 		"gsap": "^3.12.5",
+		"howler": "^2.2.4",
 		"interactjs": "^1.10.27",
 		"supabase": "^1.167.4",
 		"tone": "^14.9.17"

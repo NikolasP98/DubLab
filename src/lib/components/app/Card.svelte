@@ -1,28 +1,31 @@
 <script>
-	import { player } from '../../../lib/stores/playerStore.svelte';
+	import { player } from '$lib/stores/playerStore.svelte';
 
 	let { track } = $props();
+
+	let { currentTracks } = $state(player);
 
 	let isActive = $state(false);
 
 	function handleClick() {
-		toggleTrack(track);
+		checkIfPlaying();
+		activateTrack(track);
 	}
 
-	function checkIfPlaying() {
-		console.log(player.currentTracks);
-	}
-
-	function toggleTrack(track) {
+	function activateTrack() {
 		if (isActive) {
-			// If activating, run this code:
+			// If de-activating, run this code:
 			player.removeTrack(track);
 		} else {
 			// If activating, run this code:
 			player.addTrack(track);
 		}
 		isActive = !isActive;
-		console.log(player.currentTracks);
+		console.log(currentTracks);
+	}
+
+	function checkIfPlaying() {
+		console.log(player);
 	}
 </script>
 

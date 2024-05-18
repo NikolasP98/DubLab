@@ -1,5 +1,5 @@
 <script>
-	import Logo from '$lib/assets/logo.png';
+	import Logo from '$assets/logo.png';
 	import { onDestroy, onMount } from 'svelte';
 
 	let { isLoaded } = $props();

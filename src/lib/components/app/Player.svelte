@@ -1,18 +1,16 @@
 <script>
-	import Play from '$lib/assets/play.svg';
-	import Pause from '$lib/assets/pause.svg';
-	import Audio from '$lib/assets/audio_wave.png';
-	import Sync from '$lib/assets/audio_sync.png';
+	import Play from '$assets/play.svg';
+	import Pause from '$assets/pause.svg';
+	import Audio from '$assets/audio_wave.png';
+	import Sync from '$assets/audio_sync.png';
 
-	import { player } from '$lib/stores/playerStore.svelte';
+	import { player } from '$stores/playerStore.svelte';
 	import { trackData } from '$lib/stores/audioStore.svelte';
 
-	const { isPlaying } = $derived(player);
+	const { isPlaying, toggleState } = $derived(player);
 
-	const onPlayPause = () => {
+	const handlePPClick = () => {
 		// audioData.update((item) => ({ ...item, isPlaying: !item.isPlaying }));
-
-		player.togglePlay();
 	};
 	/*
 	I want to optimize this, but I don't understand how
@@ -28,7 +26,7 @@
 	rounded-md
 	p-4 max-w-full bg-black max-h-12"
 >
-	<button onclick={onPlayPause}>
+	<button onclick={handlePPClick}>
 		<img class="size-8 cursor-pointer" src={isPlaying ? Play : Pause} alt="" />
 	</button>
 	<div class="flex-grow">
