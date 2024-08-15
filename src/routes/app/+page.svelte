@@ -1,39 +1,15 @@
-<script>
-	import FilterNav from '$lib/components/app/HeaderPills.svelte';
-	import Picker from '$lib/components/app/TrackPicker.svelte';
-	import Player from '$lib/components/app/Player.svelte';
+<script lang="ts">
+	import type { Track } from '$lib/types';
 
-	// import { trackData } from './stores';
-	import { trackData } from '$lib/stores/audioStore.svelte';
+	import FilterNav from '$components/app/HeaderPills.svelte';
+	import Picker from '$components/app/TrackPicker.svelte';
+	import { trackStore } from '$lib/stores/trackStore.svelte';
 
-	import json from '../data.json';
-
-	// let { data } = $props();
-
-	// console.log(data.tracks); IMPORTED API KEY
-
-	// USE THIS $derived() RUNE
-	let { trackList } = $derived(trackData);
-
-	$effect(() => {
-		const importedTracks = json;
-		trackData.trackList = Array.from(importedTracks);
-	});
-
-	$effect(() => {
-		const groupSet = new Set();
-
-		for (const track of trackList) {
-			for (const group of track.groups) {
-				groupSet.add(group);
-			}
-		}
-
-		trackData.inputTypes = Array.from(groupSet);
-	});
+	// GET all tracks, parse them, and set value to TrackStore
+	let { data } = $props();
+	const pbTracks: Track[] = Object.values(data);
+	trackStore.tracks = pbTracks;
 </script>
-
-<Player />
 
 <div class="text-white">
 	<div class="flex flex-col gap-4 px-4 pt-6 mb-5 bg-black border-b-2 border-solid border-[#90ee8f]">

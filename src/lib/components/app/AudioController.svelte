@@ -5,13 +5,15 @@
 	import Sync from '$assets/audio_sync.png';
 
 	import { player } from '$stores/playerStore.svelte';
-	import { trackData } from '$lib/stores/audioStore.svelte';
+	import { trackStore } from '$lib/stores/trackStore.svelte';
 
-	const { isPlaying, toggleState } = $derived(player);
+	// let pstate = $derived(player.playerState);
+	let pstate = $derived(player.playerState);
 
-	const handlePPClick = () => {
-		// audioData.update((item) => ({ ...item, isPlaying: !item.isPlaying }));
-	};
+	$effect(() => {
+		$inspect(player.playerState);
+	});
+
 	/*
 	I want to optimize this, but I don't understand how
 	dataflow works in state. in a sense of editing nested properties
@@ -26,8 +28,13 @@
 	rounded-md
 	p-4 max-w-full bg-black max-h-12"
 >
-	<button onclick={handlePPClick}>
-		<img class="size-8 cursor-pointer" src={isPlaying ? Play : Pause} alt="" />
+	<pre>{pstate}</pre>
+	<button
+		onclick={() => {
+			player.toggleIO();
+		}}
+	>
+		<img class="size-8 cursor-pointer" src={pstate == 'STOP' ? Play : Pause} alt="" />
 	</button>
 	<div class="flex-grow">
 		<img class="h-6 w-full cursor-pointer" src={Audio} alt="" />

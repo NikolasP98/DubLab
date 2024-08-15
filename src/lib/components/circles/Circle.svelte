@@ -1,126 +1,66 @@
-<script>
+<script lang="ts">
+	import type { Artist } from '$lib/types';
 	import { spring, tweened } from 'svelte/motion';
 	import { Vector2D } from '$lib/utilities/Vector2D';
 
-	let { data } = $props();
+	let { artist } = $props();
 	let textContainer;
 
-	const rotation = spring(0, {
-		// duration: 400
-		damping: 0.5,
-		stiffness: 0.3
-	});
+	// const rotation = spring(0, {
+	// 	// duration: 400
+	// 	damping: 0.5,
+	// 	stiffness: 0.3
+	// });
 
-	$effect(async () => {
-		if (textContainer) {
-			curveText();
+	// let circlePosition = Vector2D.fromObject(artist.position);
 
-			rotation.subscribe((value) => {
-				const containerStyles = {
-					rotate: `${value}deg`
-				};
-				Object.assign(textContainer.style, containerStyles);
-			});
-		}
-	});
+	// const position = tweened(circlePosition, {
+	// 	duration: 100
+	// });
 
-	// Text Curving & Positioning
-	const curveText = () => {
-		const mainCircleSize = 384;
-		const containerStyles = {
-			width: `${mainCircleSize}px`,
-			height: `${mainCircleSize}px`,
-			rotate: '0deg'
-		};
-		const titles = textContainer.querySelectorAll('.title-text');
-		const numTitles = titles.length;
+	// const moveHandler = (e) => {
+	// 	circlePosition.add(new Vector2D(e.movementX, e.movementY));
 
-		Object.assign(textContainer.style, containerStyles);
+	// 	position.set(circlePosition);
+	// };
 
-		// Position round text in circle borders
-		for (let i = 0; i < numTitles; i++) {
-			// Starting angle will distribute titles evenly
-			const angle = (360 / numTitles) * i + 90;
+	// const rotateText = (e) => {
+	// 	rotation.update((n) => n + 180);
+	// };
 
-			const children = titles[i].innerText.split('').map((char, charIndex) => {
-				const styles = {
-					transformOrigin: `0 ${mainCircleSize / 2}px`,
-					position: 'absolute',
-					left: '50%',
-					rotate: `${angle + charIndex * 8 + $rotation}deg`
-				};
+	// let isRotating = false;
 
-				const character = document.createElement('span');
+	// const hoverHandler = (e) => {
+	// 	if (textContainer && !isRotating) {
+	// 		isRotating = true;
+	// 		rotateText();
+	// 	}
+	// };
 
-				character.innerText = char;
-
-				Object.assign(character.style, styles);
-
-				return character;
-			});
-
-			textContainer.removeChild(titles[i]);
-			textContainer.append(...children);
-		}
-	};
-
-	let circlePosition = Vector2D.fromObject(data.position);
-
-	const position = tweened(circlePosition, {
-		duration: 100
-	});
-
-	const moveHandler = (e) => {
-		circlePosition.add(new Vector2D(e.movementX, e.movementY));
-
-		position.set(circlePosition);
-	};
-
-	const rotateText = (e) => {
-		rotation.update((n) => n + 180);
-	};
-
-	let isRotating = false;
-
-	const hoverHandler = (e) => {
-		if (textContainer && !isRotating) {
-			isRotating = true;
-			rotateText();
-		}
-	};
-
-	const hoverLeave = (e) => {
-		if (textContainer && isRotating) {
-			isRotating = false;
-			rotation.set(0);
-		}
-	};
+	// const hoverLeave = (e) => {
+	// 	if (textContainer && isRotating) {
+	// 		isRotating = false;
+	// 		rotation.set(0);
+	// 	}
+	// };
+	// onmousemove={moveHandler}
+	// onmouseenter={hoverHandler}
+	// onmouseleave={hoverLeave}
+	// {primary ? ' bg-red-600' : 'absolute size-24 bg-slate-600'}
+	// style="left:{$position.x}px; top:{$position.y}px;"
 </script>
 
-<div
-	onmousemove={moveHandler}
-	onmouseenter={hoverHandler}
-	onmouseleave={hoverLeave}
-	role="figure"
-	class="circle flex justify-center items-center rounded-full
-	{primary ? ' bg-red-600' : 'absolute size-24 bg-slate-600'}"
-	style="left:{$position.x}px; top:{$position.y}px;"
->
-	{#if primary}
-		{@render titles(data.titles)}
-	{/if}
+<div role="figure" class="flex justify-center rounded-full bg-red-800 size-20">
+	<!-- {#if primary}
+		{@render titles(artist.titles)}
+	{/if} -->
+	{artist.name}
 </div>
 
-{#snippet titles(titles)}
-	<div class="size-full" bind:this={textContainer}>
+{#snippet titles(titles: string[])}
+	<div class="size-full">
 		{#each titles as titleText}
 			<span class="title-text absolute">{titleText}</span>
 		{/each}
 	</div>
 {/snippet}
-
-<style>
-	.circle:hover {
-		/* background-color: #000; */
-	}
-</style>

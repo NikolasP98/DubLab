@@ -14,7 +14,6 @@
 	});
 
 	$effect(async () => {
-		console.log(currentData);
 		if (textContainer) {
 			curveText();
 

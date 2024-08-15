@@ -1,31 +1,34 @@
+import type { Artist } from '$lib/types';
+
 type Circle = {
-	mainCircle: any;
+	id: number;
+
+	data: Artist;
+	// position: any;
+	// size: any;
 };
 
-type InitialData = {
-	circleData: Circle[];
-};
+export function createCircleStore() {
+	let allCircles = $state<Circle[]>([]);
+	let mainCircle = $state<Circle | null>(null);
 
-function createCircleStore(initial: Circle[]) {
-	let mainCircle = $state(initial);
-	let otherCircles = $state([]);
+	function switchMainCircle(newCircle: Circle) {
+		console.log(`switching to ${newCircle.data.name}`);
+	}
 
-	function switchMainCircle(track) {}
+	function clear(): Circle[] {
+		allCircles = [];
+	}
 
 	return {
-		get circleContent() {
-			return circleData;
-		},
-		set circleContent(newContent) {
-			otherCircles = newContent;
-		},
-		get mainCircle() {
-			return mainCircle;
-		},
-		set mainCircle(newTrack) {
-			mainCircle = newTrack;
-		}
+		switchMainCircle,
+		clear,
+		allCircles,
+		mainCircle
+		// get allCircles() {
+		// 	return allCircles;
+		// }
 	};
 }
 
-export const circleData = createCircleStore([]);
+// export const circleStore = createCircleStore();

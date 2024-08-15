@@ -1,12 +1,7 @@
-export const load = async ({ params }) => {
-	return {
-		title: 'Hello',
-		name: params.name,
-		entries: await getEntries()
-	};
-};
+import { getArtists } from '$lib/server/getArtists';
 
-const getEntries = async () => {
-	const entries = await (await fetch('https://dummyjson.com/products?select=title,price')).json();
-	return entries.products;
+export const load = async ({ fetch, params }) => {
+	const data = await getArtists();
+
+	return { ...data };
 };
