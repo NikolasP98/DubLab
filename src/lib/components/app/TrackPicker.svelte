@@ -36,7 +36,7 @@
 	{:else}
 		<pre>No Tracks Found!</pre>
 	{/if}
-	{#each currentTracks as track}
-		<pre>{track.track.title}</pre>
+	{#each currentTracks as entry (entry.track.id)}
+		<pre>{entry.track.title}</pre>
 	{/each}
 </div>

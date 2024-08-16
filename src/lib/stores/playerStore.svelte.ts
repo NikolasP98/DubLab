@@ -15,23 +15,21 @@ type AudioPlayer = {
 	toggleIO: () => void;
 };
 
-class createAudioPlayer {
+class AudioPlayer {
 	private #playerState = $state('STOP');
-	private #currentTracks = $state<string[]>([]);
+	private #currentTracks = $state([]);
 	private #currentTime = $state(0);
 	private #loopDuration = $state(0);
 
-	constructor() {}
-
-	get playerState(): 'PLAY' | 'PAUSE' | 'STOP' | 'RECORDING' {
+	get playerState() {
 		return this.#playerState;
 	}
 
-	get currentTracks(): ActiveTrack[] {
+	get currentTracks() {
 		return this.#currentTracks;
 	}
 
-	set currentTracks(tracks: ActiveTrack[]) {
+	set currentTracks(tracks: Track[]) {
 		this.#currentTracks = tracks;
 	}
 
@@ -39,56 +37,41 @@ class createAudioPlayer {
 		this.#currentTime = time;
 	}
 
-	toggleTrack = (track: Track) => {
-		const index = this.#currentTracks.findIndex((item: ActiveTrack) => item.track.id === track.id);
-
-		if (index !== -1) {
-			// Remove the object if it finds a match
-			this.#currentTracks = this.#currentTracks.filter((_, i) => {
-				this.#currentTracks[index].sound.pause();
-				i !== index;
-			});
-
-			if (this.#currentTracks.length < 1) {
-				this.stop();
-			}
-		} else {
-			const newObject: ActiveTrack = {
-				track: track,
-				sound: new Howl({
-					src: [track.src],
-					loop: true
-				})
-			};
-
-			// Add the new object if it doesn't find a match
-			this.#currentTracks = [...this.#currentTracks, newObject];
-
-			if ((this.#currentTracks.length = 1)) {
-				this.play();
-			}
-		}
-	};
-
 	private stop = () => {
+		if (this.#playerState == 'STOP') return;
+		this.#currentTracks.forEach((item) => item.sound.stop());
 		this.#playerState = 'STOP';
-		if (this.#currentTracks.length < 1) return;
-		this.#currentTracks.forEach((track: ActiveTrack) => {
-			track.sound.stop();
-		});
 	};
 
 	private play = () => {
-		if (this.#currentTracks.length < 1) return;
+		if (this.#playerState == 'PLAY' || this.#currentTracks.length < 1) return;
 
-		this.#currentTracks.forEach((track: ActiveTrack, i: number) => {
-			if (this.#playerState == 'STOP') {
-				this.#currentTime = track.sound.duration;
-			}
+		try {
+			this.#currentTracks.forEach((item) => item.sound.play());
+			this.#playerState = 'PLAY';
+		} catch (error) {
+			console.error(error);
+		}
+	};
 
-			track.sound.play();
-		});
-		this.#playerState = 'PLAY';
+	toggleTrack = (track: Track) => {
+		this.stop();
+
+		const index = this.#currentTracks.findIndex((item: Track) => item.track.id == track.id);
+		if (index !== -1) {
+			// Remove the object if it finds a match
+			const deleted: ActiveTrack[] = this.#currentTracks.splice(index, 1);
+			deleted[0].sound.unload();
+		} else {
+			const newTrack: ActiveTrack = { track, sound: new Howl({ src: [track.src] }) };
+			// this.#currentTracks.tracks
+			this.#currentTracks = [...this.#currentTracks, newTrack];
+		}
+		// Add the new object if it doesn't find a match
+
+		if (this.#currentTracks.length > 0) {
+			this.play();
+		}
 	};
 
 	toggleIO = () => {
@@ -102,4 +85,4 @@ class createAudioPlayer {
 	};
 }
 
-export const player: AudioPlayer = new createAudioPlayer();
+export const player: AudioPlayer = new AudioPlayer();
