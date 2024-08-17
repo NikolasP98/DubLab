@@ -6,87 +6,78 @@ type ActiveTrack = {
 	sound: Howl;
 };
 
-type AudioPlayer = {
-	playerState: 'PLAY' | 'PAUSE' | 'STOP' | 'RECORDING';
-	currentTracks: ActiveTrack[];
-	currentTime: number;
-	loopDuration: number;
-	toggleTrack: (track: Track) => void;
-	toggleIO: () => void;
-};
-
 class AudioPlayer {
-	private #playerState = $state('STOP');
-	private #currentTracks = $state([]);
-	private #currentTime = $state(0);
-	private #loopDuration = $state(0);
+	private state: 'PLAY' | 'PAUSE' | 'STOP' | 'RECORDING' = $state('STOP');
+	private activeTracks: ActiveTrack[] = $state([]);
+	private cTime: number = $state(0);
+	private loopDur: number = $state(0);
 
 	get playerState() {
-		return this.#playerState;
+		return this.state;
 	}
 
 	get currentTracks() {
-		return this.#currentTracks;
-	}
-
-	set currentTracks(tracks: Track | Track[]) {
-		const trackArray = Array.from(tracks);
-
-		this.#currentTracks = trackArray;
+		return this.activeTracks;
 	}
 
 	set currentTime(time: number) {
-		this.#currentTime = time;
+		this.cTime = time;
 	}
 
 	private stop = () => {
-		if (this.#playerState == 'STOP') return;
-		this.#currentTracks.forEach((item) => item.sound.stop());
-		this.#playerState = 'STOP';
+		if (this.state == 'STOP') return;
+		this.activeTracks.forEach((item) => item.sound.stop());
+		this.state = 'STOP';
 	};
 
 	private play = () => {
-		if (this.#playerState == 'PLAY' || this.#currentTracks.length < 1) return;
+		if (this.state == 'PLAY' || this.activeTracks.length < 1) return;
 
 		try {
-			this.#currentTracks.forEach((item) => item.sound.play());
-			this.#playerState = 'PLAY';
+			this.activeTracks.forEach((item) => item.sound.play());
+			this.state = 'PLAY';
 		} catch (error) {
 			console.error(error);
 		}
 	};
 
-	toggleTrack = (track: Track) => {
-		this.stop();
+	toggleTrack = (track: Track): void => {
+		const prevState = this.playerState;
 
-		const index = this.#currentTracks.findIndex((item: Track) => item.track.id == track.id);
+		this.stop();
+		const index = this.activeTracks.findIndex((item: Track) => item.track.id == track.id);
 		if (index !== -1) {
 			// Remove the object if it finds a match
 
-			const deleted: ActiveTrack = this.#currentTracks.splice(index, 1)[0];
+			const deleted: ActiveTrack = this.activeTracks.splice(index, 1)[0];
+			if (this.activeTracks.length == 0) {
+				this.stop();
+			}
 			// unload the sound  associated with the track
 			deleted.sound.unload();
 		} else {
 			const newTrack: ActiveTrack = { track, sound: new Howl({ src: [track.src], loop: true }) };
 			// this.#currentTracks.tracks
-			this.#currentTracks = [...this.#currentTracks, newTrack];
-		}
-		// Add the new object if it doesn't find a match
+			this.activeTracks = [...this.activeTracks, newTrack];
 
-		if (this.#currentTracks.length > 0) {
+			if (this.activeTracks.length == 1) {
+				this.play();
+			}
+		}
+		if (this.activeTracks.length > 1 && prevState == 'PLAY') {
 			this.play();
 		}
 	};
 
-	toggleIO = () => {
-		if (this.#playerState == 'PLAY') {
+	toggleIO = (): void => {
+		if (this.state == 'PLAY') {
 			this.stop();
-		} else if (this.#playerState == 'STOP') {
+		} else if (this.state == 'STOP') {
 			this.play();
 		}
 
-		return this.#playerState;
+		return this.state;
 	};
 }
 
-export const player: AudioPlayer = new AudioPlayer();
+export const player = new AudioPlayer();
