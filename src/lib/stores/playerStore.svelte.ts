@@ -64,7 +64,9 @@ class AudioPlayer {
 				this.play();
 			}
 		}
-		if (this.activeTracks.length > 1 && prevState == 'PLAY') {
+
+		console.log(this.activeTracks.length > 0, prevState == 'PLAY');
+		if (this.activeTracks.length > 0 && prevState == 'PLAY') {
 			this.play();
 		}
 	};
