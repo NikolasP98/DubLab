@@ -16,15 +16,16 @@
 			<div class="card-container flex flex-col items-center justify-center gap-1">
 				<button
 					onclick={() => player.toggleTrack(track)}
-					class="size-36 max-w-36
+					class={`size-36 max-w-36
 							flex flex-col items-center justify-center
 							p-2 rounded-3xl
 							border-[#90ee8f] border-solid border-2
 							hover:cursor-pointer
-						  "
+							
+						  `}
 				>
 					<span>
-						{track.artists.join(', ')}
+						{track.artists.map((t) => t.name).join(', ')}
 					</span>
 					<span class="text-xs text-gray-600">
 						{track.genres.join(', ')}

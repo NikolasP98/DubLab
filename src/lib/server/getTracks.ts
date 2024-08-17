@@ -5,15 +5,15 @@ export async function getTracks(fetch: typeof globalThis.fetch) {
 		const pb = new PocketBase('https://dl.admin-console.dev');
 
 		const records = await pb.collection('tracks').getFullList({
-			sort: '-created'
+			sort: '-created',
+			expand: 'artists'
 		});
 
 		const tracks = records.map((e) => {
 			return {
-				id: e.id,
-				title: e.title,
-				src: pb.files.getUrl(e, e.audio),
-				...e
+				...e,
+				artists: e.expand.artists,
+				src: pb.files.getUrl(e, e.audio)
 			};
 		});
 

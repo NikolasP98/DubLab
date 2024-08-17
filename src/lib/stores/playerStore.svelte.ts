@@ -29,8 +29,10 @@ class AudioPlayer {
 		return this.#currentTracks;
 	}
 
-	set currentTracks(tracks: Track[]) {
-		this.#currentTracks = tracks;
+	set currentTracks(tracks: Track | Track[]) {
+		const trackArray = Array.from(tracks);
+
+		this.#currentTracks = trackArray;
 	}
 
 	set currentTime(time: number) {
@@ -60,10 +62,12 @@ class AudioPlayer {
 		const index = this.#currentTracks.findIndex((item: Track) => item.track.id == track.id);
 		if (index !== -1) {
 			// Remove the object if it finds a match
-			const deleted: ActiveTrack[] = this.#currentTracks.splice(index, 1);
-			deleted[0].sound.unload();
+
+			const deleted: ActiveTrack = this.#currentTracks.splice(index, 1)[0];
+			// unload the sound  associated with the track
+			deleted.sound.unload();
 		} else {
-			const newTrack: ActiveTrack = { track, sound: new Howl({ src: [track.src] }) };
+			const newTrack: ActiveTrack = { track, sound: new Howl({ src: [track.src], loop: true }) };
 			// this.#currentTracks.tracks
 			this.#currentTracks = [...this.#currentTracks, newTrack];
 		}

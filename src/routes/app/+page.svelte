@@ -9,6 +9,8 @@
 	let { data } = $props();
 	const pbTracks: Track[] = Object.values(data);
 	trackStore.tracks = pbTracks;
+
+	$inspect(trackStore.tracks);
 </script>
 
 <div class="text-white">
