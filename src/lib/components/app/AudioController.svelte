@@ -10,10 +10,6 @@
 	// let pstate = $derived(player.playerState);
 	let pstate = $derived(player.playerState);
 
-	$effect(() => {
-		$inspect(player.playerState);
-	});
-
 	/*
 	I want to optimize this, but I don't understand how
 	dataflow works in state. in a sense of editing nested properties
@@ -28,7 +24,6 @@
 	rounded-md
 	p-4 max-w-full bg-black max-h-12"
 >
-	<pre>{pstate}</pre>
 	<button
 		onclick={() => {
 			player.toggleIO();

@@ -21,7 +21,8 @@
 							p-2 rounded-3xl
 							border-[#90ee8f] border-solid border-2
 							hover:cursor-pointer
-							
+
+							${player.currentTracks.some((t) => t.track.id == track.id) ? ' bg-[#90ee8f] text-black' : ''}
 						  `}
 				>
 					<span>
@@ -37,7 +38,4 @@
 	{:else}
 		<pre>No Tracks Found!</pre>
 	{/if}
-	{#each currentTracks as entry (entry.track.id)}
-		<pre>{entry.track.title}</pre>
-	{/each}
 </div>

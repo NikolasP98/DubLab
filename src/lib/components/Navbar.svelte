@@ -16,9 +16,7 @@ fixed top-0 w-full min-h-4 z-10
 		<li>
 			<span>Welcome.</span>
 		</li>
-		<li>
-			<span class="bg-red-500">...Connecting...</span>
-		</li>
+
 		<!-- <li class:active={$page.url.pathname === '/app'} class="px-4 hover:bg-black hover:text-white"> -->
 		<li class="px-4 hover:bg-black hover:text-white">
 			<a href="/app">app --></a>

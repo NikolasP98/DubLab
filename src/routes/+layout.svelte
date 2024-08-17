@@ -27,13 +27,4 @@
 	:global(body) {
 		font-family: monospace;
 	}
-
-	.active {
-		background-color: black;
-		color: white;
-
-		text-decoration-line: underline;
-
-		text-underline-offset: 2px;
-	}
 </style>
