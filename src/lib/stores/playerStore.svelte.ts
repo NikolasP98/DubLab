@@ -54,7 +54,6 @@ class AudioPlayer {
 	toggleFilter = (filter: string): void => {
 		const index = this.currFilters.indexOf(filter);
 
-		console.log('index', index);
 		if (index !== -1) {
 			this.currFilters.splice(index, 1);
 		} else {
