@@ -5,14 +5,20 @@
 	import { trackStore } from '$lib/stores/trackStore.svelte';
 	import { player } from '$lib/stores/playerStore.svelte';
 
-	let currentTracks = $derived(player.currentTracks);
+	let currentTracks = $derived(
+		trackStore.tracks.filter((track) => {
+			return (
+				player.filters.length === 0 || player.filters.every((group) => track.groups.includes(group))
+			);
+		})
+	);
 </script>
 
 <Player />
 
 <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-7 gap-6 p-4 md:p-6">
 	{#if trackStore}
-		{#each trackStore.tracks as track (track.id)}
+		{#each currentTracks as track (track.id)}
 			<div class="card-container flex flex-col items-center justify-center gap-1">
 				<button
 					onclick={() => player.toggleTrack(track)}
@@ -22,7 +28,7 @@
 							border-[#90ee8f] border-solid border-2
 							hover:cursor-pointer
 
-							${player.currentTracks.some((t) => t.track.id == track.id) ? ' bg-[#90ee8f] text-black' : ''}
+							${player.currentTracks.some((t) => t.track.id === track.id) ? ' bg-[#90ee8f] text-black' : ''}
 						  `}
 				>
 					<span>

@@ -5,9 +5,7 @@
 	import Sync from '$assets/audio_sync.png';
 
 	import { player } from '$stores/playerStore.svelte';
-	import { trackStore } from '$lib/stores/trackStore.svelte';
 
-	// let pstate = $derived(player.playerState);
 	let pstate = $derived(player.playerState);
 
 	/*

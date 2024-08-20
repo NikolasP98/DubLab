@@ -8,7 +8,7 @@ export type Track = {
 	// duration: number;
 	// bpm: number;
 	genres: string[];
-	// groups: string[];
+	groups: string[];
 
 	// file data
 	// type: string;

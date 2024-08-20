@@ -7,10 +7,16 @@ type ActiveTrack = {
 };
 
 class AudioPlayer {
-	private state: 'PLAY' | 'PAUSE' | 'STOP' | 'RECORDING' = $state('STOP');
+	private state: 'PLAY' | 'PAUSE' | 'STOP' | 'RECORDING' = $state('');
 	private activeTracks: ActiveTrack[] = $state([]);
 	private cTime: number = $state(0);
 	private loopDur: number = $state(0);
+	private currFilters: string[] = $state([]);
+
+	constructor() {
+		this.state = 'STOP';
+		this.cTime = 0;
+	}
 
 	get playerState() {
 		return this.state;
@@ -18,6 +24,10 @@ class AudioPlayer {
 
 	get currentTracks() {
 		return this.activeTracks;
+	}
+
+	get filters() {
+		return this.currFilters;
 	}
 
 	set currentTime(time: number) {
@@ -38,6 +48,17 @@ class AudioPlayer {
 			this.state = 'PLAY';
 		} catch (error) {
 			console.error(error);
+		}
+	};
+
+	toggleFilter = (filter: string): void => {
+		const index = this.currFilters.indexOf(filter);
+
+		console.log('index', index);
+		if (index !== -1) {
+			this.currFilters.splice(index, 1);
+		} else {
+			this.currFilters = [...this.currFilters, filter];
 		}
 	};
 
@@ -65,7 +86,6 @@ class AudioPlayer {
 			}
 		}
 
-		console.log(this.activeTracks.length > 0, prevState == 'PLAY');
 		if (this.activeTracks.length > 0 && prevState == 'PLAY') {
 			this.play();
 		}

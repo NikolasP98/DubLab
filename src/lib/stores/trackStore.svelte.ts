@@ -7,12 +7,12 @@ type TrackStore = {
 };
 
 class createTrackStore {
-	private #isLoaded = $state(false);
-	private #tracks: Tracks[] = $state([]);
+	private isLoadComplete = $state(false);
+	private trackList: Tracks[] = $state([]);
 
-	private #inputTypes = $derived.by((): string[] => {
+	private inputs = $derived.by((): string[] => {
 		const groupSet = new Set();
-		for (const track of this.#tracks) {
+		for (const track of this.trackList) {
 			for (const group of track.groups) {
 				groupSet.add(group);
 			}
@@ -22,23 +22,23 @@ class createTrackStore {
 	});
 
 	get tracks(): Track[] {
-		return this.#tracks;
+		return this.trackList;
 	}
 
 	get isLoaded(): boolean {
-		return this.#isLoaded;
+		return this.isLoadComplete;
 	}
 
 	get inputTypes(): string[] {
-		return this.#inputTypes;
+		return this.inputs;
 	}
 
 	set tracks(trackList): void {
-		this.#tracks = Array.from(trackList);
+		this.trackList = Array.from(trackList);
 	}
 
 	reset = (): void => {
-		this.#tracks = [];
+		this.trackList = [];
 	};
 }
 
