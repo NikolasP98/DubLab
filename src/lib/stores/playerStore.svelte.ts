@@ -6,12 +6,20 @@ type ActiveTrack = {
 	sound: Howl;
 };
 
+type Filters = {
+	genres: string[];
+	inputs: string[];
+};
+
 class AudioPlayer {
 	private state: 'PLAY' | 'PAUSE' | 'STOP' | 'RECORDING' = $state('');
 	private activeTracks: ActiveTrack[] = $state([]);
 	private cTime: number = $state(0);
 	private loopDur: number = $state(0);
-	private currFilters: string[] = $state([]);
+	private currFilters: Filters = $state({
+		genres: [],
+		inputs: []
+	});
 
 	constructor() {
 		this.state = 'STOP';
@@ -51,14 +59,18 @@ class AudioPlayer {
 		}
 	};
 
-	toggleFilter = (filter: string): void => {
-		const index = this.currFilters.indexOf(filter);
+	toggleFilter = (category: keyof Filters, filter: string): void => {
+		const filterArray = this.currFilters[category];
+		const index = filterArray.indexOf(filter);
 
 		if (index !== -1) {
-			this.currFilters.splice(index, 1);
+			filterArray.splice(index, 1);
 		} else {
-			this.currFilters = [...this.currFilters, filter];
+			filterArray.push(filter);
 		}
+
+		// Trigger reactive update
+		this.currFilters = { ...this.currFilters };
 	};
 
 	toggleTrack = (track: Track): void => {

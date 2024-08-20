@@ -7,27 +7,32 @@
 
 	let currentTracks = $derived(
 		trackStore.tracks.filter((track) => {
-			return (
-				player.filters.length === 0 || player.filters.every((group) => track.groups.includes(group))
-			);
+			const { genres, inputs } = player.filters;
+
+			const genreMatch =
+				genres.length === 0 || genres.every((filter) => track.genres.includes(filter));
+			const inputMatch =
+				inputs.length === 0 || inputs.every((filter) => track.groups.includes(filter));
+
+			return genreMatch && inputMatch;
 		})
 	);
 </script>
 
 <Player />
 
-<div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-7 gap-6 p-4 md:p-6">
+<div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-6 gap-6 p-4 md:p-6">
 	{#if trackStore}
 		{#each currentTracks as track (track.id)}
-			<div class="card-container flex flex-col items-center justify-center gap-1">
+			<div class="card-container flex h-44 flex-col items-center justify-center gap-1">
 				<button
 					onclick={() => player.toggleTrack(track)}
-					class={`size-36 max-w-36
+					class={`size-36
 							flex flex-col items-center justify-center
-							p-2 rounded-3xl
+							p-2 rounded-2xl
 							border-[#90ee8f] border-solid border-2
 							hover:cursor-pointer
-
+							
 							${player.currentTracks.some((t) => t.track.id === track.id) ? ' bg-[#90ee8f] text-black' : ''}
 						  `}
 				>
@@ -38,7 +43,9 @@
 						{track.genres.join(', ')}
 					</span>
 				</button>
-				<span class="">{track.title}</span>
+				<span class="text-ellipsis max-w-full block overflow-hidden whitespace-nowrap"
+					>{track.title}</span
+				>
 			</div>
 		{/each}
 	{:else}

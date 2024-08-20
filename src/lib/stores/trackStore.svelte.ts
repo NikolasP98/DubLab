@@ -4,6 +4,7 @@ type TrackStore = {
 	isLoaded: boolean;
 	tracks: Track[];
 	inputTypes: string[];
+	trackGenres: string[];
 };
 
 class createTrackStore {
@@ -21,6 +22,16 @@ class createTrackStore {
 		return Array.from(groupSet);
 	});
 
+	private genres = $derived.by((): string[] => {
+		const genreSet = new Set();
+		for (const track of this.trackList) {
+			for (const genre of track.genres) {
+				genreSet.add(genre);
+			}
+		}
+		return Array.from(genreSet);
+	});
+
 	get tracks(): Track[] {
 		return this.trackList;
 	}
@@ -31,6 +42,10 @@ class createTrackStore {
 
 	get inputTypes(): string[] {
 		return this.inputs;
+	}
+
+	get trackGenres(): string[] {
+		return this.genres;
 	}
 
 	set tracks(trackList): void {

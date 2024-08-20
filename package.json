@@ -17,6 +17,8 @@
     "@sveltejs/adapter-vercel": "^5.3.0",
     "@sveltejs/kit": "^2.0.0",
     "@sveltejs/vite-plugin-svelte": "^3.0.0",
+    "@types/bun": "latest",
+    "@types/figlet": "^1.5.8",
     "@types/howler": "^2.2.11",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
@@ -25,18 +27,19 @@
     "svelte": "^5.0.0-next.1",
     "svelte-check": "^3.8.4",
     "tailwindcss": "^3.4.3",
-    "vite": "^5.0.3",
-    "@types/bun": "latest"
+    "vite": "^5.0.3"
   },
   "type": "module",
   "dependencies": {
     "clsx": "^2.1.1",
+    "figlet": "^1.7.0",
     "firebase": "^10.12.1",
     "gsap": "^3.12.5",
     "howler": "^2.2.4",
     "interactjs": "^1.10.27",
     "pocketbase": "^0.21.3",
     "supabase": "^1.167.4",
+    "svelte-adapter-bun": "^0.5.2",
     "tailwind-merge": "^2.3.0",
     "tailwind-variants": "^0.2.1",
     "tone": "^14.9.17"
